@@ -1,28 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- BottomNavigationView Styles -->
+    <!-- BottomNavigationView Style -->
     <style name="Widget.App.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
         <item name="itemIconTint">@color/bottom_nav_item_color</item>
         <item name="itemTextColor">@color/bottom_nav_item_color</item>
         <item name="backgroundTint">@color/bottom_nav_menu</item>
-        <!-- Puedes añadir más personalizaciones aquí -->
     </style>
 
-    <!-- Estilo para botones cuadrados con borde negro -->
-    <style name="Widget.App.Button.Bordered" parent="Widget.MaterialComponents.Button">
-        <!-- Eliminar el redondeado de las esquinas -->
-        <item name="cornerRadius">0dp</item>
 
-        <!-- Colores principales -->
-<!--        <item name="backgroundTint">@color/primary_button_selector</item>-->
-<!--        <item name="android:textColor">@color/primary_button_text_selector</item>-->
-<!--        <item name="strokeColor">@color/primary_button_border_selector</item>-->
+    <!-- Floating Action Button (Back) Style -->
+    <style name="Widget.App.FloatingActionButton.Bordered" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/white</item>
+        <item name="strokeColor">@color/black</item>
+        <item name="strokeWidth">8dp</item>
+        <item name="rippleColor">@color/gray</item>
+        <item name="iconTint">@color/black</item>
+        <item name="elevation">3dp</item>
+        <item name="hoveredFocusedTranslationZ">3dp</item>
+        <item name="pressedTranslationZ">6dp</item>
+    </style>
+
+
+    <!-- Estilo para botones cuadrados con borde negro -->
+    <!-- RA and Remote Button Style -->
+    <style name="Widget.App.Button.Bordered" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">4dp</item>
 
         <item name="backgroundTint">@color/white</item>
         <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
         <item name="strokeColor">@color/black</item>
 
-        <item name="strokeWidth">3dp</item>
+        <item name="strokeWidth">4dp</item>
 
         <!-- Configuración de padding y tipografía -->
         <item name="android:paddingStart">16dp</item>
@@ -35,17 +45,5 @@
 
         <!-- Añadir ripple effect para mejor feedback -->
 <!--        <item name="rippleColor">@android:color/darker_gray</item>-->
-    </style>
-
-    <!-- Estilo para Floating Action Button (Back) -->
-    <style name="Widget.App.FloatingActionButton.Bordered" parent="Widget.MaterialComponents.FloatingActionButton">
-        <item name="backgroundTint">@color/white</item>
-        <item name="strokeColor">@color/black</item>
-        <item name="strokeWidth">8dp</item>
-        <item name="rippleColor">@color/gray</item>
-        <item name="iconTint">@color/black</item>
-        <item name="elevation">3dp</item>
-        <item name="hoveredFocusedTranslationZ">3dp</item>
-        <item name="pressedTranslationZ">6dp</item>
     </style>
 </resources>

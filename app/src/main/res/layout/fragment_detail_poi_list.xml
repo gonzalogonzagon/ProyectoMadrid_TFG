@@ -64,12 +64,10 @@
             style="@style/Widget.App.Button.Bordered"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
             android:text="Experiencia RA"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@id/btnARExperienceRemote"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvPoiDetailDescription" />
 
         <com.google.android.material.button.MaterialButton
@@ -77,12 +75,10 @@
             style="@style/Widget.App.Button.Bordered"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
             android:text="RA En Remoto"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/btnARExperience"
             app:layout_constraintEnd_toStartOf="@id/fabShowOnMap"
+            app:layout_constraintStart_toEndOf="@id/btnARExperience"
             app:layout_constraintTop_toBottomOf="@id/tvPoiDetailDescription" />
 
 
@@ -90,14 +86,130 @@
             android:id="@+id/fabShowOnMap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
             android:backgroundTint="@color/black"
             android:contentDescription="TODO"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/btnARExperienceRemote"
             app:layout_constraintTop_toBottomOf="@id/tvPoiDetailDescription"
-            app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@drawable/ic_location_pin_24dp"
             app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tvTitleDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="Descripción"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnARExperience" />
+
+        <TextView
+            android:id="@+id/tvPoiDescription2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="El “Toboggan”, escrito con dos ges, una de las atracciones destinadas al disfrute público allá por los inicios del siglo XX."
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleDescription" />
+
+        <ImageView
+            android:id="@+id/ivDescriptionImage"
+            android:layout_width="0dp"
+            android:layout_height="256dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_calle_alcala"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPoiDescription2" />
+
+        <TextView
+            android:id="@+id/tvPoiDescription3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/lore_ipsum"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivDescriptionImage" />
+
+        <TextView
+            android:id="@+id/tvTitleTutorial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="Descubre la experiencia"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPoiDescription3" />
+
+        <TextView
+            android:id="@+id/tvTextTutorial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/lore_ipsum"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitleTutorial" />
+
+        <TextView
+            android:id="@+id/tvLinks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="Enlaces de interés"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTextTutorial" />
+
+        <TextView
+            android:id="@+id/tvTextLinks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/lore_ipsum"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLinks" />
+
 
         <TextView
             android:id="@+id/tvError"

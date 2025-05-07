@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Estado presionado - fondo negro, texto blanco -->
-    <item android:color="@android:color/black" android:state_pressed="true"/>
-    <!-- Estado deshabilitado - fondo gris claro -->
-    <item android:color="@color/gray" android:state_enabled="false"/>
-    <!-- Estado normal - fondo blanco -->
-    <item android:color="@android:color/white"/>
-</selector>
