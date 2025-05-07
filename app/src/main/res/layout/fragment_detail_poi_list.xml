@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.list.DetailPOIListFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivPoiDetailImage"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:contentDescription="@string/image_of_point_of_interest"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_launcher_foreground" />
+
+        <View
+            android:id="@+id/categoryIndicatorDetail"
+            android:layout_width="0dp"
+            android:layout_height="16dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivPoiDetailImage" />
+
+        <TextView
+            android:id="@+id/tvPoiDetailTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/categoryIndicatorDetail"
+            tools:text="Plaza Mayor" />
+
+        <TextView
+            android:id="@+id/tvPoiDetailDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPoiDetailTitle"
+            tools:text="La Plaza Mayor de Madrid es una plaza rectangular de estilo barroco, ubicada en el centro de Madrid." />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnARExperience"
+            style="@style/Widget.App.Button.Bordered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="Experiencia RA"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnARExperienceRemote"
+            app:layout_constraintTop_toBottomOf="@id/tvPoiDetailDescription" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnARExperienceRemote"
+            style="@style/Widget.App.Button.Bordered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="RA En Remoto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnARExperience"
+            app:layout_constraintEnd_toStartOf="@id/fabShowOnMap"
+            app:layout_constraintTop_toBottomOf="@id/tvPoiDetailDescription" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabShowOnMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/black"
+            android:contentDescription="TODO"
+            app:layout_constraintStart_toEndOf="@id/btnARExperienceRemote"
+            app:layout_constraintTop_toBottomOf="@id/tvPoiDetailDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_location_pin_24dp"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
