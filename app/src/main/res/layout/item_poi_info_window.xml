@@ -53,9 +53,10 @@
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:textColor="@color/black"
+            android:fontFamily="@font/open_sans_bold"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnClosePopup"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/categoryIndicator"
             tools:text="Plaza Mayor" />
@@ -63,9 +64,10 @@
         <TextView
             android:id="@+id/tvPoiDescription"
             android:layout_width="0dp"
+            android:fontFamily="@font/open_sans_regular"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="12dp"
             android:layout_marginBottom="24dp"
             android:textColor="@color/dark_gray"
@@ -75,7 +77,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btnClosePopup"
+            app:layout_constraintTop_toBottomOf="@id/tvPoiTitle"
             tools:text="La Plaza Mayor de Madrid es una plaza rectangular de estilo barroco, ubicada en el centro de Madrid." />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

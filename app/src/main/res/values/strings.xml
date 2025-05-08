@@ -15,7 +15,7 @@
     <string name="poi_list_no_data_subtitle2">Puedes cambiar</string>
 
     <!--    Point of Interest Title Texts-->
-    <string name="tobogan_title">El tobogán</string>
+    <string name="tobogan_title">El tobogán de Cibeles</string>
     <string name="clara_campoamor_title">Monumento a Clara Campoamor</string>
     <string name="cabina_telefonica_title">Cabinas telefónicas españolas</string>
     <string name="real_cinema_title">Real Cinema</string>
@@ -27,7 +27,7 @@
     <string name="templo_debod_title">Templo de Debod</string>
 
     <!--    Point of Interest Description Texts-->
-    <string name="tobogan_description">El “Toboggan”, escrito con dos ges, una de las atracciones destinadas al disfrute público allá por los inicios del siglo XX.</string>
+    <string name="tobogan_description">El “Toboggan”, escrito con dos ges, era una de las atracciones destinadas al disfrute público allá por los inicios del siglo XX.</string>
     <string name="plaza_mayor_description">Lore ipsum dolor sit amet, consectetur adipiscing elit.</string>
     <string name="puerta_sol_description">Lore ipsum dolor sit amet, consectetur adipiscing elit.</string>
     <string name="parque_retiro_description">Lore ipsum dolor sit amet, consectetur adipiscing elit.</string>
