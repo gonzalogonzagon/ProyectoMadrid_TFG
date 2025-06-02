@@ -1,5 +1,7 @@
 package com.example.proyectomadrid_tfg.view.list
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -50,7 +52,7 @@ class DetailPOIListFragment : Fragment() {
         binding.apply {
             ivPoiDetailImage.setImageResource(pointOfInterest.image)
             tvPoiDetailTitle.setText(pointOfInterest.title)
-            tvPoiDetailDescription.setText(pointOfInterest.description)
+            tvPoiDetailSubtitle.setText(pointOfInterest.subtitle)
             categoryIndicatorDetail.setBackgroundColor(
                 ContextCompat.getColor(requireContext(), pointOfInterest.category)
             )
@@ -62,6 +64,14 @@ class DetailPOIListFragment : Fragment() {
 
             btnARExperienceRemote.setOnClickListener {
                 // Implementar acción para mostrar en mapa o experiencia AR
+            }
+
+            if (pointOfInterest.detailPointOfInterest?.wikiUrl != null) {
+                binding.tvTextLinks.text = "Ver en Wikipedia"
+                binding.tvTextLinks.setOnClickListener {
+                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://es.wikipedia.org/wiki/Plaza_Mayor_de_Madrid"))
+                    startActivity(intent)
+                }
             }
 
             // Handle Show on Map button visibility

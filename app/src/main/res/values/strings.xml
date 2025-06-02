@@ -7,12 +7,16 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-    <!--    Point of Interest List Texts-->
-    <string name="poi_list_title">Listado de Puntos de Interés</string>
-    <string name="poi_list_subtitle">Selecciona un punto de interés para ver más información</string>
-    <string name="poi_list_no_data">No hay datos disponibles</string>
-    <string name="poi_list_no_data_subtitle">No se han encontrado puntos de interés en esta categoría</string>
-    <string name="poi_list_no_data_subtitle2">Puedes cambiar</string>
+    <!--    POINT OF INTEREST AR SCENES-->
+    <string name="tobogan_scene">ToboganScene</string>
+    <string name="clara_campoamor_scene">ClaraScene</string>
+    <string name="cabina_telefonica_scene">CabinaScene</string>
+    <string name="real_cinema_scene">RealCinemaScene</string>
+    <!--    POINT OF INTEREST REMOTE SCENES-->
+    <string name="r_tobogan_scene">RToboganScene</string>
+    <string name="r_clara_campoamor_scene">RClaraScene</string>
+    <string name="r_cabina_telefonica_scene">RCabinaScene</string>
+    <string name="r_real_cinema_scene">RCinemaScene</string>
 
     <!--    Point of Interest Title Texts-->
     <string name="tobogan_title">El tobogán de Cibeles</string>
@@ -27,7 +31,7 @@
     <string name="templo_debod_title">Templo de Debod</string>
 
     <!--    Point of Interest Description Texts-->
-    <string name="tobogan_description">El “Toboggan”, escrito con dos ges, era una de las atracciones destinadas al disfrute público allá por los inicios del siglo XX.</string>
+    <string name="tobogan_description">El “Toboggan”, escrito con dos ges, fue una de las atracciones destinadas al disfrute público allá por los inicios del siglo XX.</string>
     <string name="plaza_mayor_description">Lore ipsum dolor sit amet, consectetur adipiscing elit.</string>
     <string name="puerta_sol_description">Lore ipsum dolor sit amet, consectetur adipiscing elit.</string>
     <string name="parque_retiro_description">Lore ipsum dolor sit amet, consectetur adipiscing elit.</string>
@@ -35,8 +39,29 @@
     <string name="gran_via_description">Lore ipsum dolor sit amet, consectetur adipiscing elit.</string>
     <string name="templo_debod_description">Lore ipsum dolor sit amet, consectetur adipiscing elit.</string>
 
+    <!--    Point of Interest External Links-->
+    <string name="tobogan_external_link">https://es.wikipedia.org/wiki/Plaza_Mayor_de_Madrid</string>
+
+
+    <!--    Point of Interest List Texts-->
+    <string name="poi_list_title">Listado de Puntos de Interés</string>
+    <string name="poi_list_subtitle">Selecciona un punto de interés para ver más información</string>
+    <string name="poi_list_no_data">No hay datos disponibles</string>
+    <string name="poi_list_no_data_subtitle">No se han encontrado puntos de interés en esta categoría</string>
+    <string name="poi_list_no_data_subtitle2">Puedes cambiar</string>
+
     <!--    Point of Interest Picture Texts-->
     <string name="image_of_point_of_interest">Imagen del punto de interés</string>
+
+
+    <!--    Collectable Title Texts-->
+    <string name="collectable_map_title">Planos y mapas</string>
+    <string name="collectable_postcard_title">Postales</string>
+
+    <!--    Collectable Subtitle Texts-->
+    <string name="collectable_map_subtitle">Descubre mapas históricos de la villa de Madrid</string>
+    <string name="collectable_postcard_subtitle">Instantáneas de los lugares más emblemáticos de Madrid</string>
+
 
     <!--    FAB Text-->
     <string name="back_to_previous_screen">Volver a la pantalla anterior</string>

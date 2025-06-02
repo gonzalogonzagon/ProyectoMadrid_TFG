@@ -2,7 +2,6 @@ package com.example.proyectomadrid_tfg.view.map
 
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -151,7 +150,7 @@ class CityMapFragment : Fragment() {
         val marker = Marker(map).apply {
             position = GeoPoint(poi.latitude, poi.longitude)
             title = getString(poi.title)
-            snippet = getString(poi.description)
+            snippet = getString(poi.subtitle)
 
             // Asignar icono según categoría
             icon = ContextCompat.getDrawable(
@@ -193,7 +192,7 @@ class CityMapFragment : Fragment() {
             val marker = Marker(map).apply {
                 position = GeoPoint(poi.latitude, poi.longitude)
                 title = getString(poi.title)
-                snippet = getString(poi.description)
+                snippet = getString(poi.subtitle)
 
                 // Asignar icono según categoría
                 icon = ContextCompat.getDrawable(

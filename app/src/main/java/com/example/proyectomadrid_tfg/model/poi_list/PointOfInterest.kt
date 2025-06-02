@@ -6,14 +6,10 @@ import androidx.annotation.StringRes
 
 data class PointOfInterest(
     @StringRes val title: Int,
-    @StringRes val description: Int,
-    @ColorRes val category: Int,
+    @StringRes val subtitle: Int,
     @DrawableRes val image: Int,
+    @ColorRes val category: Int,
     val latitude: Double,
     val longitude: Double,
-    @DrawableRes val mapIcon: Int? = null,
-    @StringRes val detailedDescription: Int? = null, // Descripción detallada para la vista en detalle
-    @DrawableRes val detailImages: List<Int> = emptyList(), // Imágenes adicionales para la vista detalle
-    val arSceneId: String? = null, // Identificador de escena AR
-    val wikiUrl: String? = null, // Enlace a Wikipedia
+    val detailPointOfInterest: DetailPointOfInterest? = null,
 )

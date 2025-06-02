@@ -34,7 +34,14 @@
         android:id="@+id/navigation_collection"
         android:name="com.example.proyectomadrid_tfg.view.collection.CollectablesFragment"
         android:label="@string/title_collection"
-        tools:layout="@layout/fragment_collectables" />
+        tools:layout="@layout/fragment_collectables" >
+        <action
+            android:id="@+id/action_navigation_collection_to_navigation_detail_poi"
+            app:destination="@id/navigation_detail_poi" />
+        <action
+            android:id="@+id/action_navigation_collection_to_navigation_collection_list"
+            app:destination="@id/navigation_collection_list" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_detail_poi"
@@ -53,6 +60,26 @@
             app:destination="@id/navigation_map"
             app:popUpTo="@id/navigation_map"
             app:popUpToInclusive="false" />
+        <argument
+            android:name="fromCollection"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="fromPostcard"
+            app:argType="boolean"
+            android:defaultValue="false" />
 
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_collection_list"
+        android:name="com.example.proyectomadrid_tfg.view.collection.CollectablesListFragment"
+        android:label="fragment_collectables_list"
+        tools:layout="@layout/fragment_collectables_list" >
+        <action
+            android:id="@+id/action_navigation_collection_list_to_navigation_detail_poi"
+            app:destination="@id/navigation_detail_poi" />
+        <argument
+            android:name="collectableListId"
+            app:argType="integer" />
     </fragment>
 </navigation>

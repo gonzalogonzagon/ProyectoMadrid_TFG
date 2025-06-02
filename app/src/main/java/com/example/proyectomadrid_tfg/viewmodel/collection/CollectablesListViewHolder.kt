@@ -1,30 +1,23 @@
-package com.example.proyectomadrid_tfg.viewmodel.poi_list
+package com.example.proyectomadrid_tfg.viewmodel.collection
 
 import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.example.proyectomadrid_tfg.R
 import com.example.proyectomadrid_tfg.databinding.ItemPoiListBinding
 import com.example.proyectomadrid_tfg.model.poi_list.PointOfInterest
 
-class PointOfInterestViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+class CollectablesListViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     private val binding = ItemPoiListBinding.bind(view)
 
     fun bind(pointOfInterest: PointOfInterest, clickListener: (PointOfInterest) -> Unit) {
-        // Configurar la imagen
         binding.ivPoiImage.setImageResource(pointOfInterest.image)
-        
-        // Configurar el título
         binding.tvPoiTitle.setText(pointOfInterest.title)
-        
-        // Configurar la descripción
         binding.tvPoiDescription.setText(pointOfInterest.subtitle)
-        
-        // Configurar el color de categoría
         binding.categoryIndicator.setBackgroundColor(
-            ContextCompat.getColor(itemView.context, pointOfInterest.category)
+            ContextCompat.getColor(itemView.context, R.color.black)
         )
-        
-        // Configurar el click listener
+
         itemView.setOnClickListener { clickListener(pointOfInterest) }
     }
 }

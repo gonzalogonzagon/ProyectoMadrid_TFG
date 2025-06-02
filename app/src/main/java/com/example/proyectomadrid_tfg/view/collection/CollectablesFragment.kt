@@ -1,60 +1,61 @@
 package com.example.proyectomadrid_tfg.view.collection
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.proyectomadrid_tfg.R
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.proyectomadrid_tfg.databinding.FragmentCollectablesBinding
+import com.example.proyectomadrid_tfg.model.collection.CollectableProvider
+import com.example.proyectomadrid_tfg.viewmodel.collection.CollectablesAdapter
 
 /**
  * A simple [Fragment] subclass.
- * Use the [CollectablesFragment.newInstance] factory method to
- * create an instance of this fragment.
  */
 class CollectablesFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    private var _binding: FragmentCollectablesBinding? = null
+    private val binding get() = _binding!!
+    private lateinit var adapterCollectables: CollectablesAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_collectables, container, false)
+    ): View {
+        _binding = FragmentCollectablesBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment CollectablesFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            CollectablesFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initRecyclerView()
     }
+
+    private fun initRecyclerView() {
+        adapterCollectables = CollectablesAdapter(
+            CollectableProvider.collectableObjects
+        ) { collectable ->
+            if (!collectable.poiList.isNullOrEmpty()) {
+                val action =
+                    CollectablesFragmentDirections.actionNavigationCollectionToNavigationCollectionList(collectable.title)
+                findNavController().navigate(action)
+            } else if (collectable.poi != null) {
+                val action =
+                    CollectablesFragmentDirections.actionNavigationCollectionToNavigationDetailPoi(collectable.poi.title)
+                findNavController().navigate(action)
+            }
+        }
+
+        binding.recyclerView.apply {
+            layoutManager = LinearLayoutManager(requireContext())
+            adapter = adapterCollectables
+        }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+    }
+
 }

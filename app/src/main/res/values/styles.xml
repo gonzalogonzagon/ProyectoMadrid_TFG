@@ -24,7 +24,7 @@
     <!-- Estilo para botones cuadrados con borde negro -->
     <!-- RA and Remote Button Style -->
     <style name="Widget.App.Button.Bordered" parent="Widget.MaterialComponents.Button">
-        <item name="cornerRadius">4dp</item>
+        <item name="cornerRadius">8dp</item>
 
         <item name="backgroundTint">@color/white</item>
         <item name="android:textColor">@color/black</item>
