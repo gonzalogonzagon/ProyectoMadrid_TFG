@@ -11,6 +11,8 @@ import androidx.navigation.fragment.navArgs
 import com.example.proyectomadrid_tfg.BuildConfig
 import com.example.proyectomadrid_tfg.R
 import com.example.proyectomadrid_tfg.databinding.FragmentCityMapBinding
+import com.example.proyectomadrid_tfg.model.collection.CollectableProvider
+import com.example.proyectomadrid_tfg.model.poi_list.PointOfInterest
 import com.example.proyectomadrid_tfg.model.poi_list.PointOfInterestProvider
 import org.osmdroid.config.Configuration
 import org.osmdroid.events.MapEventsReceiver
@@ -70,7 +72,12 @@ class CityMapFragment : Fragment() {
             addSingleMarker(selectedPoiId)
         } else {
             // En caso contrario, mostramos todos los marcadores
-            addPOIMarkers()
+            addPOIMarkers(PointOfInterestProvider.pointOfInterestList)
+            val postcardPOIs = CollectableProvider.collectableObjects
+                .filter { it.poiList != null }
+                .flatMap { it.poiList!! }
+
+            addPOIMarkers(postcardPOIs)
         }
     }
 
@@ -133,19 +140,23 @@ class CityMapFragment : Fragment() {
     private fun getCategoryIconMap(): Map<Int, Int> {
         // Mapeo de categorías a recursos de drawable
         return mapOf(
-            R.color.dark_gray to R.drawable.ic_marker_monument_32px,
-            R.color.error to R.drawable.ic_marker_selected_32px,
-            R.color.gray to R.drawable.ic_marker_monument_32px,
-            R.color.light_gray to R.drawable.ic_marker_selected_copia2,
-            R.color.black to R.drawable.ic_marker_monument_32px
+            R.color.poi_color_person to R.drawable.ic_marker_person,
+            R.color.poi_color_culture to R.drawable.ic_marker_culture,
+            R.color.poi_color_activity to R.drawable.ic_marker_activity,
+            R.color.poi_color_technology to R.drawable.ic_marker_technology,
+            R.color.collectable_postcard to R.drawable.ic_marker_postcard
         )
     }
 
     private fun addSingleMarker(pointOfInterestId: Int) {
         val poi = PointOfInterestProvider.pointOfInterestList.find { it.title == pointOfInterestId }
+            // Si no se encuentra, buscar en los poiList de CollectableProvider
+            ?: CollectableProvider.collectableObjects
+                .asSequence()
+                .mapNotNull { it.poiList }
+                .flatten()
+                .find { it.title == pointOfInterestId }
             ?: return
-
-        val categoryIconMap = getCategoryIconMap()
 
         val marker = Marker(map).apply {
             position = GeoPoint(poi.latitude, poi.longitude)
@@ -184,11 +195,11 @@ class CityMapFragment : Fragment() {
         map.controller.animateTo(point)
     }
 
-    private fun addPOIMarkers() {
+    private fun addPOIMarkers(providerList: List<PointOfInterest>) {
         // Mapeo de categorías a recursos de drawable
         val categoryIconMap = getCategoryIconMap()
 
-        PointOfInterestProvider.pointOfInterestList.forEach { poi ->
+        providerList.forEach { poi ->
             val marker = Marker(map).apply {
                 position = GeoPoint(poi.latitude, poi.longitude)
                 title = getString(poi.title)

@@ -14,8 +14,8 @@ object CollectableProvider {
                 subtitle = R.string.collectable_map_subtitle,
                 image = R.drawable.img_mapa_villa_madrid,
                 category = R.color.black,
-                latitude = 40.4168,
-                longitude = -3.7038,
+                latitude = 40.4100,
+                longitude = -3.7000,
             ),
         ),
         Collectable(
@@ -25,27 +25,35 @@ object CollectableProvider {
             poiList = listOf(
                 PointOfInterest(
                     title = R.string.puerta_sol_title,
-                    subtitle = R.string.puerta_sol_description,
+                    subtitle = R.string.puerta_sol_subtitle,
                     image = R.drawable.ic_launcher_foreground,
-                    category = R.color.black,
-                    latitude = 40.4170,
-                    longitude = -3.7035
+                    category = R.color.collectable_postcard,
+                    latitude = 40.416843,
+                    longitude = -3.703875
                 ),
                 PointOfInterest(
                     title = R.string.palacio_real_title,
-                    subtitle = R.string.palacio_real_description,
+                    subtitle = R.string.palacio_real_subtitle,
                     image = R.drawable.ic_launcher_foreground,
-                    category = R.color.black,
-                    latitude = 40.4240,
-                    longitude = -3.7170
+                    category = R.color.collectable_postcard,
+                    latitude = 40.416557,
+                    longitude = -3.714431
                 ),
                 PointOfInterest(
-                    title = R.string.parque_retiro_title,
-                    subtitle = R.string.parque_retiro_description,
+                    title = R.string.plaza_mayor_title,
+                    subtitle = R.string.plaza_mayor_subtitle,
                     image = R.drawable.ic_launcher_foreground,
-                    category = R.color.black,
-                    latitude = 40.4180,
-                    longitude = -3.7040
+                    category = R.color.collectable_postcard,
+                    latitude = 40.415750,
+                    longitude = -3.707392
+                ),
+                PointOfInterest(
+                    title = R.string.puerta_alcala_title,
+                    subtitle = R.string.puerta_alcala_subtitle,
+                    image = R.drawable.ic_launcher_foreground,
+                    category = R.color.collectable_postcard,
+                    latitude = 40.419727,
+                    longitude = -3.688097
                 ),
             )
         ),

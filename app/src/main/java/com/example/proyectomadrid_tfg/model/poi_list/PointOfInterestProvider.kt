@@ -8,9 +8,9 @@ object PointOfInterestProvider {
             title = R.string.tobogan_title,
             subtitle = R.string.tobogan_description,
             image = R.drawable.img_calle_alcala,
-            category = R.color.dark_gray,
-            latitude = 40.419071,
-            longitude = -3.692411,
+            category = R.color.poi_color_activity,
+            latitude = 40.419199,
+            longitude = -3.692473,
             detailPointOfInterest = DetailPointOfInterest(
                 arSceneId = R.string.tobogan_scene,
                 detailedDescription = R.string.tobogan_description,
@@ -24,57 +24,30 @@ object PointOfInterestProvider {
 
         PointOfInterest(
             title = R.string.clara_campoamor_title,
-            subtitle = R.string.plaza_mayor_description,
+            subtitle = R.string.clara_campoamor_subtitle,
             image = R.drawable.img_monumento_clara_campoamor,
-            category = R.color.light_gray,
-            latitude = 40.415861,
-            longitude = -3.708398,
+            category = R.color.poi_color_person,
+            latitude = 40.427071,
+            longitude = -3.710488,
         ),
 
         PointOfInterest(
             title = R.string.real_cinema_title,
-            subtitle = R.string.templo_debod_description,
+            subtitle = R.string.real_cinema_subtitle,
             image = R.drawable.img_real_cinema,
-            category = R.color.gray,
-            latitude = 40.423700,
-            longitude = -3.718400,
+            category = R.color.poi_color_culture,
+            latitude = 40.418366,
+            longitude = -3.709133,
         ),
 
         PointOfInterest(
             title = R.string.cabina_telefonica_title,
-            subtitle = R.string.parque_retiro_description,
+            subtitle = R.string.cabina_telefonica_subtitle,
             image = R.drawable.img_cabinas_telefonicas,
-            category = R.color.gray,
-            latitude = 40.415363,
-            longitude = -3.707398,
+            category = R.color.poi_color_technology,
+            latitude = 40.417959,
+            longitude = -3.680223,
         ),
 
-
-        PointOfInterest(
-            title = R.string.puerta_sol_title,
-            subtitle = R.string.puerta_sol_description,
-            category = R.color.error,
-            image = R.drawable.ic_launcher_foreground,
-            latitude = 40.416775,
-            longitude = -3.703790,
-        ),
-
-        PointOfInterest(
-            title = R.string.palacio_real_title,
-            subtitle = R.string.palacio_real_description,
-            category = R.color.light_gray,
-            image = R.drawable.ic_launcher_foreground,
-            latitude = 40.417940,
-            longitude = -3.711769,
-        ),
-
-        PointOfInterest(
-            title = R.string.gran_via_title,
-            subtitle = R.string.gran_via_description,
-            category = R.color.black,
-            image = R.drawable.ic_launcher_foreground,
-            latitude = 40.420000,
-            longitude = -3.703790,
-        ),
     )
 }

@@ -10,5 +10,7 @@ data class DetailPointOfInterest(
     @DrawableRes val detailImages: Int? = null, // Imágenes adicionales para la vista detalle
     @StringRes val assistTutorial: Int? = null,
     @DrawableRes val assistTutorialImage: Int? = null,
+    @StringRes val ulrText: Int? = null,
     val wikiUrl: Int? = null, // Enlace a Wikipedia
+    val urlList: List<Int>? = null
 )

@@ -44,6 +44,10 @@ class MainActivity : AppCompatActivity() {
             // Actualizar el título según cambia la navegación
             navController.addOnDestinationChangedListener { _, destination, _ ->
                 when (destination.id) {
+                    R.id.navigation_collection_list -> {
+                        binding.navView.visibility = View.GONE
+                        binding.fabBack.visibility = View.VISIBLE
+                    }
                     R.id.navigation_detail_poi -> {
                         // Hide bottom navigation and show back button when in detail view
                         binding.navView.visibility = View.GONE

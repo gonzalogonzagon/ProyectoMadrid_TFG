@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.proyectomadrid_tfg.databinding.FragmentDetailPoiListBinding
+import com.example.proyectomadrid_tfg.model.collection.CollectableProvider
 import com.example.proyectomadrid_tfg.model.poi_list.PointOfInterest
 import com.example.proyectomadrid_tfg.model.poi_list.PointOfInterestProvider
 
@@ -36,10 +37,23 @@ class DetailPOIListFragment : Fragment() {
         val pointOfInterestTitle = args.pointOfInterestId
         val isFromMap = args.fromMap
 
-        // Aquí puedes buscar el punto de interés en tu lista de datos
+        // Buscar en la lista principal de POIs
         val pointOfInterest = PointOfInterestProvider.pointOfInterestList.find {
             it.title == pointOfInterestTitle
         }
+        // Si no se encuentra, buscar en los poiList de CollectableProvider
+            ?: CollectableProvider.collectableObjects
+                .asSequence()
+                .filter { !it.poiList.isNullOrEmpty() }
+                .mapNotNull { it.poiList }
+                .flatten()
+                .find { it.title == pointOfInterestTitle }
+            // Si tampoco se encuentra, buscar en los collectables cuyo poiList es null o vacía y comparar con su poi
+            ?: CollectableProvider.collectableObjects
+                .asSequence()
+                .filter { it.poiList.isNullOrEmpty() }
+                .mapNotNull { it.poi }
+                .find { it.title == pointOfInterestTitle }
 
         if (pointOfInterest != null) {
             initUI(pointOfInterest, isFromMap)

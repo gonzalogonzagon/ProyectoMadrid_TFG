@@ -24,13 +24,14 @@
     <!-- Estilo para botones cuadrados con borde negro -->
     <!-- RA and Remote Button Style -->
     <style name="Widget.App.Button.Bordered" parent="Widget.MaterialComponents.Button">
-        <item name="cornerRadius">8dp</item>
-
         <item name="backgroundTint">@color/white</item>
+
         <item name="android:textColor">@color/black</item>
-        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
         <item name="strokeColor">@color/black</item>
 
+        <item name="cornerRadius">8dp</item>
         <item name="strokeWidth">4dp</item>
 
         <!-- Configuración de padding y tipografía -->

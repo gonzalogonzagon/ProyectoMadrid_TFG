@@ -18,49 +18,76 @@
     <string name="r_cabina_telefonica_scene">RCabinaScene</string>
     <string name="r_real_cinema_scene">RCinemaScene</string>
 
+    <!--    ################################################################-->
+
     <!--    Point of Interest Title Texts-->
     <string name="tobogan_title">El tobogán de Cibeles</string>
     <string name="clara_campoamor_title">Monumento a Clara Campoamor</string>
     <string name="cabina_telefonica_title">Cabinas telefónicas españolas</string>
     <string name="real_cinema_title">Real Cinema</string>
-    <string name="plaza_mayor_title">Plaza Mayor</string>
-    <string name="puerta_sol_title">Puerta del Sol</string>
-    <string name="parque_retiro_title">Parque del Retiro</string>
-    <string name="palacio_real_title">Palacio Real</string>
-    <string name="gran_via_title">Gran Vía</string>
-    <string name="templo_debod_title">Templo de Debod</string>
+
+    <!--    Point of Interest Subtitle Texts-->
+    <string name="tobogan_description">El “Toboggan”, escrito con dos ges, fue una de las atracciones destinadas al disfrute público allá por los inicios del siglo XX.</string>
+    <string name="clara_campoamor_subtitle">La mujer que logró el sufragio femenino en España</string>
+    <string name="cabina_telefonica_subtitle">Testigos del pasado, olvidadas en el presente, pero siempre icónicas</string>
+    <string name="real_cinema_subtitle">El primero de los grandes cines madrileños</string>
+
 
     <!--    Point of Interest Description Texts-->
-    <string name="tobogan_description">El “Toboggan”, escrito con dos ges, fue una de las atracciones destinadas al disfrute público allá por los inicios del siglo XX.</string>
-    <string name="plaza_mayor_description">Lore ipsum dolor sit amet, consectetur adipiscing elit.</string>
-    <string name="puerta_sol_description">Lore ipsum dolor sit amet, consectetur adipiscing elit.</string>
-    <string name="parque_retiro_description">Lore ipsum dolor sit amet, consectetur adipiscing elit.</string>
-    <string name="palacio_real_description">Lore ipsum dolor sit amet, consectetur adipiscing elit.</string>
-    <string name="gran_via_description">Lore ipsum dolor sit amet, consectetur adipiscing elit.</string>
-    <string name="templo_debod_description">Lore ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="tobogan_description_long">El “Toboggan”, escrito con dos ges, fue una de las atracciones destinadas al disfrute público allá por los inicios del siglo XX. Se trataba de un tobogán de madera que se encontraba en la Plaza de Cibeles, en Madrid, y que permitía a los ciudadanos deslizarse por una pendiente empinada. Aunque el tobogán ya no existe, su recuerdo perdura como un símbolo de la diversión y el entretenimiento de aquella época.</string>
+    <string name="clara_campoamor_description_long">Clara Campoamor fue una destacada política y defensora de los derechos de las mujeres en España. Nació en Madrid en 1888 y se convirtió en la primera mujer diputada en el Congreso de los Diputados en 1931. Fue una figura clave en la lucha por el sufragio femenino, logrando que las mujeres españolas obtuvieran el derecho al voto en 1931. Su legado perdura como un símbolo de la lucha por la igualdad de género y los derechos civiles.</string>
+    <string name="cabina_telefonica_description_long">Las cabinas telefónicas españolas son un símbolo icónico de la comunicación en España. Aunque han caído en desuso con el auge de los teléfonos móviles, estas cabinas siguen siendo un recordatorio nostálgico de una época en la que la comunicación a larga distancia era un lujo. Muchas de ellas han sido restauradas y se han convertido en atracciones turísticas, preservando su diseño clásico y su importancia histórica.</string>
+    <string name="real_cinema_description_long">El Real Cinema, inaugurado en 1920, fue el primer gran cine de Madrid y un hito en la historia del cine español. Con una capacidad para más de 2.000 espectadores, se convirtió en un lugar emblemático para la proyección de películas y eventos culturales. Aunque ha pasado por diversas etapas y transformaciones a lo largo de los años, su legado perdura como un símbolo del cine clásico y la cultura cinematográfica en España.</string>
+
+    <!--   Point of Interest Description2 Texts-->
+    <string name="tobogan_description2">El “Toboggan”, escrito con dos ges, fue una de las atracciones destinadas al disfrute público allá por los inicios del siglo XX. Se trataba de un tobogán de madera que se encontraba en la Plaza de Cibeles, en Madrid, y que permitía a los ciudadanos deslizarse por una pendiente empinada. Aunque el tobogán ya no existe, su recuerdo perdura como un símbolo de la diversión y el entretenimiento de aquella época.</string>
+    <string name="clara_campoamor_description2">Clara Campoamor fue una destacada política y defensora de los derechos de las mujeres en España. Nació en Madrid en 1888 y se convirtió en la primera mujer diputada en el Congreso de los Diputados en 1931. Fue una figura clave en la lucha por el sufragio femenino, logrando que las mujeres españolas obtuvieran el derecho al voto en 1931. Su legado perdura como un símbolo de la lucha por la igualdad de género y los derechos civiles.</string>
+    <string name="cabina_telefonica_description2">Las cabinas telefónicas españolas son un símbolo icónico de la comunicación en España. Aunque han caído en desuso con el auge de los teléfonos móviles, estas cabinas siguen siendo un recordatorio nostálgico de una época en la que la comunicación a larga distancia era un lujo. Muchas de ellas han sido restauradas y se han convertido en atracciones turísticas, preservando su diseño clásico y su importancia histórica.</string>
+    <string name="real_cinema_description2">El Real Cinema, inaugurado en 1920, fue el primer gran cine de Madrid y un hito en la historia del cine español. Con una capacidad para más de 2.000 espectadores, se convirtió en un lugar emblemático para la proyección de películas y eventos culturales. Aunque ha pasado por diversas etapas y transformaciones a lo largo de los años, su legado perdura como un símbolo del cine clásico y la cultura cinematográfica en España.</string>
+
+    <!--    Point of Interest Tutorial Texts-->
+    <string name="tobogan_tutorial">¡Bienvenido al tobogán de Cibeles! Deslízate por la pendiente y disfruta de la vista de la Plaza de Cibeles mientras te diviertes en esta atracción histórica.</string>
+    <string name="clara_campoamor_tutorial">Descubre la historia de Clara Campoamor, una pionera en la lucha por los derechos de las mujeres en España. Aprende sobre su legado y su contribución al sufragio femenino.</string>
+    <string name="cabina_telefonica_tutorial">Explora las cabinas telefónicas españolas, un símbolo icónico de la comunicación en España. Descubre su historia y su importancia cultural.</string>
+    <string name="real_cinema_tutorial">Sumérgete en la historia del Real Cinema, el primer gran cine de Madrid. Descubre su legado y su papel en la cultura cinematográfica española.</string>
+
+
 
     <!--    Point of Interest External Links-->
     <string name="tobogan_external_link">https://es.wikipedia.org/wiki/Plaza_Mayor_de_Madrid</string>
 
 
-    <!--    Point of Interest List Texts-->
-    <string name="poi_list_title">Listado de Puntos de Interés</string>
-    <string name="poi_list_subtitle">Selecciona un punto de interés para ver más información</string>
-    <string name="poi_list_no_data">No hay datos disponibles</string>
+    <!--    Point of Interest List DetailView Texts-->
+    <string name="tvTitleDescription">Información</string>
+    <string name="tvTitleTutorial">Cómo iniciar la experiencia</string>
+    <string name="tvLinks">Enlaces de interés</string>
     <string name="poi_list_no_data_subtitle">No se han encontrado puntos de interés en esta categoría</string>
     <string name="poi_list_no_data_subtitle2">Puedes cambiar</string>
 
     <!--    Point of Interest Picture Texts-->
     <string name="image_of_point_of_interest">Imagen del punto de interés</string>
 
+    <!--    ################################################################-->
 
     <!--    Collectable Title Texts-->
     <string name="collectable_map_title">Planos y mapas</string>
     <string name="collectable_postcard_title">Postales</string>
 
+    <string name="palacio_real_title">Palacio Real</string>
+    <string name="plaza_mayor_title">Plaza Mayor</string>
+    <string name="puerta_alcala_title">Puerta de Alcalá</string>
+    <string name="puerta_sol_title">Puerta del Sol</string>
+
+
+
     <!--    Collectable Subtitle Texts-->
     <string name="collectable_map_subtitle">Descubre mapas históricos de la villa de Madrid</string>
     <string name="collectable_postcard_subtitle">Instantáneas de los lugares más emblemáticos de Madrid</string>
+
+    <string name="palacio_real_subtitle">El palacio real más grande de Europa Occidental y uno de los más grandes del mundo</string>
+    <string name="plaza_mayor_subtitle">Lugar de encuentro, anuncios y celebraciones de carácter civil, religioso y militar</string>
+    <string name="puerta_alcala_subtitle">Una de las cinco puertas reales, o registro, que daban acceso a la ciudad</string>
+    <string name="puerta_sol_subtitle">Epicentro histórico y social de Madrid, desde sus inciertos inicios como "calle Ancha" hasta ser protagonista de las campanadas</string>
 
 
     <!--    FAB Text-->
@@ -159,4 +186,5 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+    <string name="navigate_to_map">Ir a Mapa</string>
 </resources>
