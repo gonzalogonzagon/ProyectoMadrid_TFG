@@ -43,7 +43,7 @@ class CollectablesFragment : Fragment() {
                 findNavController().navigate(action)
             } else if (collectable.poi != null) {
                 val action =
-                    CollectablesFragmentDirections.actionNavigationCollectionToNavigationDetailPoi(collectable.poi.title)
+                    CollectablesFragmentDirections.actionNavigationCollectionToNavigationDetailPoi(collectable.poi.title, fromPostcard = false, fromCollection = true)
                 findNavController().navigate(action)
             }
         }

@@ -51,7 +51,7 @@ class CollectablesListFragment : Fragment() {
         ) { poi ->
             // Navegar al detalle del POI
             val action = CollectablesListFragmentDirections
-                .actionNavigationCollectionListToNavigationDetailPoi(poi.title)
+                .actionNavigationCollectionListToNavigationDetailPoi(poi.title, fromPostcard = true, fromCollection = true)
             findNavController().navigate(action)
         }
 

@@ -13,11 +13,11 @@ object PointOfInterestProvider {
             longitude = -3.692473,
             detailPointOfInterest = DetailPointOfInterest(
                 arSceneId = R.string.tobogan_scene,
-                detailedDescription = R.string.tobogan_description,
-                detailedDescription2 = R.string.tobogan_description,
-                detailImages = R.drawable.img_calle_alcala,
-                assistTutorial = R.string.lore_ipsum,
-                assistTutorialImage = R.drawable.img_calle_alcala,
+                detailedDescription = R.string.tobogan_description_long,
+                detailedDescription2 = R.string.tobogan_description2,
+                detailImages = R.drawable.img_hem_nuevomundo_18950725,
+                assistTutorial = R.string.tobogan_tutorial,
+                assistTutorialImage = R.drawable.img_tuto_cibeles,
                 wikiUrl = R.string.tobogan_external_link
             )
         ),
@@ -29,6 +29,15 @@ object PointOfInterestProvider {
             category = R.color.poi_color_person,
             latitude = 40.427071,
             longitude = -3.710488,
+            detailPointOfInterest = DetailPointOfInterest(
+                arSceneId = R.string.tobogan_scene,
+                detailedDescription = R.string.clara_campoamor_description_long,
+                detailedDescription2 = R.string.clara_campoamor_description2,
+                detailImages = R.drawable.img_info_clara,
+                assistTutorial = R.string.clara_campoamor_tutorial,
+                assistTutorialImage = R.drawable.img_tuto_clara,
+                wikiUrl = R.string.clara_campoamor_external_link
+            )
         ),
 
         PointOfInterest(
@@ -38,6 +47,14 @@ object PointOfInterestProvider {
             category = R.color.poi_color_culture,
             latitude = 40.418366,
             longitude = -3.709133,
+            detailPointOfInterest = DetailPointOfInterest(
+                arSceneId = R.string.tobogan_scene,
+                detailedDescription = R.string.real_cinema_description_long,
+                detailImages = R.drawable.img_info_cinema,
+                assistTutorial = R.string.real_cinema_tutorial,
+                assistTutorialImage = R.drawable.img_tuto_hotel_teatro_front,
+                wikiUrl = R.string.real_cinema_external_link
+            )
         ),
 
         PointOfInterest(
@@ -47,6 +64,15 @@ object PointOfInterestProvider {
             category = R.color.poi_color_technology,
             latitude = 40.417959,
             longitude = -3.680223,
+            detailPointOfInterest = DetailPointOfInterest(
+                arSceneId = R.string.tobogan_scene,
+                detailedDescription = R.string.cabina_telefonica_description_long,
+                detailedDescription2 = R.string.cabina_telefonica_description2,
+                detailImages = R.drawable.img_telephone_viana_park,
+                assistTutorial = R.string.cabina_telefonica_tutorial,
+                assistTutorialImage = R.drawable.img_tuto_cabina,
+                wikiUrl = R.string.cabina_telefonica_external_link
+            )
         ),
 
     )

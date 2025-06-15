@@ -7,9 +7,9 @@
     tools:context=".view.list.DetailPOIListFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:paddingBottom="64dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingBottom="64dp">
 
         <ImageView
             android:id="@+id/ivPoiDetailImage"
@@ -40,8 +40,8 @@
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/open_sans_regular"
             android:textColor="@color/black"
-            android:textStyle="bold"
             android:textSize="32sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/categoryIndicatorDetail"
@@ -67,8 +67,8 @@
             style="@style/Widget.App.Button.Bordered"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingVertical="12dp"
             android:layout_marginTop="24dp"
+            android:paddingVertical="12dp"
             android:text="Experiencia RA"
             app:layout_constraintEnd_toStartOf="@id/btnARExperienceRemote"
             app:layout_constraintStart_toStartOf="parent"
@@ -79,8 +79,8 @@
             style="@style/Widget.App.Button.Bordered"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingVertical="12dp"
             android:layout_marginTop="24dp"
+            android:paddingVertical="12dp"
             android:text="RA En Remoto"
             app:layout_constraintEnd_toStartOf="@id/fabShowOnMap"
             app:layout_constraintStart_toEndOf="@id/btnARExperience"
@@ -121,44 +121,46 @@
             android:id="@+id/tvPoiDescription2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+
+            android:layout_marginHorizontal="32dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
             android:fontFamily="@font/open_sans_regular"
-            tools:text="El “Toboggan”, escrito con dos ges, una de las atracciones destinadas al disfrute público allá por los inicios del siglo XX."
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvTitleDescription" />
+            app:layout_constraintTop_toBottomOf="@id/tvTitleDescription"
+            tools:text="El “Toboggan”, escrito con dos ges, una de las atracciones destinadas al disfrute público allá por los inicios del siglo XX." />
 
         <ImageView
             android:id="@+id/ivDescriptionImage"
             android:layout_width="0dp"
             android:layout_height="256dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="32dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/img_calle_alcala"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvPoiDescription2" />
+            app:layout_constraintTop_toBottomOf="@id/tvPoiDescription2"
+            tools:src="@drawable/img_calle_alcala" />
 
         <TextView
             android:id="@+id/tvPoiDescription3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="24dp"
             android:fontFamily="@font/open_sans_regular"
-            tools:text="@string/lore_ipsum"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ivDescriptionImage" />
+            app:layout_constraintTop_toBottomOf="@id/ivDescriptionImage"
+            tools:text="@string/lore_ipsum" />
 
         <TextView
             android:id="@+id/tvTitleTutorial"
@@ -180,38 +182,39 @@
             android:id="@+id/tvTextTutorial"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginHorizontal="32dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
             android:fontFamily="@font/open_sans_regular"
-            tools:text="@string/lore_ipsum"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvTitleTutorial" />
+            app:layout_constraintTop_toBottomOf="@id/tvTitleTutorial"
+            tools:text="@string/lore_ipsum" />
 
         <ImageView
             android:id="@+id/ivTutorialImage"
             android:layout_width="0dp"
             android:layout_height="256dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="32dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/img_calle_alcala"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvTextTutorial" />
+            app:layout_constraintTop_toBottomOf="@id/tvTextTutorial"
+            tools:src="@drawable/img_calle_alcala" />
 
         <TextView
             android:id="@+id/tvLinks"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginHorizontal="24dp"
             android:layout_marginTop="32dp"
-            android:layout_marginEnd="16dp"
             android:fontFamily="@font/open_sans_regular"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
             android:text="@string/tvLinks"
             android:textColor="@color/black"
             android:textSize="28sp"
@@ -228,12 +231,12 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/open_sans_regular"
-            tools:text="@string/lore_ipsum"
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvLinks" />
+            app:layout_constraintTop_toBottomOf="@id/tvLinks"
+            tools:text="@string/lore_ipsum" />
 
 
         <TextView

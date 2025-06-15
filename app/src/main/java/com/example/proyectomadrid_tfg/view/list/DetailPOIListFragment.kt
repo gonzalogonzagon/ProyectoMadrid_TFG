@@ -36,6 +36,8 @@ class DetailPOIListFragment : Fragment() {
         // Aquí puedes obtener los argumentos y mostrar la información detallada
         val pointOfInterestTitle = args.pointOfInterestId
         val isFromMap = args.fromMap
+        val isFromPostcard = args.fromPostcard
+        val isFromCollection = args.fromCollection
 
         // Buscar en la lista principal de POIs
         val pointOfInterest = PointOfInterestProvider.pointOfInterestList.find {
@@ -56,13 +58,13 @@ class DetailPOIListFragment : Fragment() {
                 .find { it.title == pointOfInterestTitle }
 
         if (pointOfInterest != null) {
-            initUI(pointOfInterest, isFromMap)
+            initUI(pointOfInterest, isFromMap, isFromPostcard, isFromCollection)
         } else {
             showErrorState("No se pudo encontrar el punto de interés seleccionado")
         }
     }
 
-    private fun initUI(pointOfInterest: PointOfInterest, fromMap : Boolean) {
+    private fun initUI(pointOfInterest: PointOfInterest, fromMap : Boolean, fromPostcard : Boolean, fromCollection : Boolean) {
         binding.apply {
             ivPoiDetailImage.setImageResource(pointOfInterest.image)
             tvPoiDetailTitle.setText(pointOfInterest.title)
@@ -80,12 +82,62 @@ class DetailPOIListFragment : Fragment() {
                 // Implementar acción para mostrar en mapa o experiencia AR
             }
 
+            if (pointOfInterest.detailPointOfInterest != null) {
+                // Descripción 1
+                pointOfInterest.detailPointOfInterest.detailedDescription?.let {
+                    tvPoiDescription2.setText(it)
+                    tvPoiDescription2.visibility = View.VISIBLE
+                } ?: run {
+                    tvTitleDescription.visibility = View.GONE
+                    tvPoiDescription2.visibility = View.GONE
+                }
+
+                // Descripción 2
+                pointOfInterest.detailPointOfInterest.detailedDescription2?.let {
+                    tvPoiDescription3.setText(it)
+                    tvPoiDescription3.visibility = View.VISIBLE
+                } ?: run {
+                    tvPoiDescription3.visibility = View.GONE
+                }
+
+                // Imagen adicional
+                pointOfInterest.detailPointOfInterest.detailImages?.let {
+                    ivDescriptionImage.setImageResource(it)
+                    ivDescriptionImage.visibility = View.VISIBLE
+                } ?: run {
+                    ivDescriptionImage.visibility = View.GONE
+                }
+            } else {
+                tvTitleDescription.visibility = View.GONE
+                tvPoiDescription2.visibility = View.GONE
+                tvPoiDescription3.visibility = View.GONE
+                ivDescriptionImage.visibility = View.GONE
+            }
+
+            // Mostrar tutorial de ayuda si existe
+            pointOfInterest.detailPointOfInterest?.assistTutorial?.let {
+                tvTextTutorial.setText(it)
+                tvTextTutorial.visibility = View.VISIBLE
+            } ?: run {
+                tvTextTutorial.visibility = View.GONE
+            }
+            pointOfInterest.detailPointOfInterest?.assistTutorialImage?.let {
+                ivTutorialImage.setImageResource(it)
+                ivTutorialImage.visibility = View.VISIBLE
+            } ?: run {
+                ivTutorialImage.visibility = View.GONE
+            }
+
             if (pointOfInterest.detailPointOfInterest?.wikiUrl != null) {
-                binding.tvTextLinks.text = "Ver en Wikipedia"
+                binding.tvTextLinks.text = "Consulta más información pulsando aquí"
                 binding.tvTextLinks.setOnClickListener {
-                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://es.wikipedia.org/wiki/Plaza_Mayor_de_Madrid"))
+                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse(pointOfInterest.detailPointOfInterest.wikiUrl.let { getString(it) }))
                     startActivity(intent)
                 }
+            }
+
+            if (fromPostcard || fromCollection) {
+                btnARExperienceRemote.visibility = View.GONE
             }
 
             // Handle Show on Map button visibility
