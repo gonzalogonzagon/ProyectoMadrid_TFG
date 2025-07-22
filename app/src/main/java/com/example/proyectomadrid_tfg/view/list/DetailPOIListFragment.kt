@@ -128,10 +128,10 @@ class DetailPOIListFragment : Fragment() {
                 ivTutorialImage.visibility = View.GONE
             }
 
-            if (pointOfInterest.detailPointOfInterest?.wikiUrl != null) {
+            if (pointOfInterest.detailPointOfInterest?.url != null) {
                 binding.tvTextLinks.text = "Consulta más información pulsando aquí"
                 binding.tvTextLinks.setOnClickListener {
-                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse(pointOfInterest.detailPointOfInterest.wikiUrl.let { getString(it) }))
+                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse(pointOfInterest.detailPointOfInterest.url.let { getString(it) }))
                     startActivity(intent)
                 }
             }

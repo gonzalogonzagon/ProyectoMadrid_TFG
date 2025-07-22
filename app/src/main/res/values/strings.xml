@@ -27,7 +27,7 @@
     <string name="real_cinema_title">Real Cinema</string>
 
     <!--    Point of Interest Subtitle Texts-->
-    <string name="tobogan_description">Los Jardines del Buen Retiro, un escenario de ocio y espectáculos populares en el Madrid de finales del siglo XIX</string>
+    <string name="tobogan_description">Los Jardines del Buen Retiro, escenario de ocio y espectáculos populares en el Madrid de finales del siglo XIX</string>
     <string name="clara_campoamor_subtitle">La mujer que logró el sufragio femenino en España</string>
     <string name="cabina_telefonica_subtitle">Auténticos refugios de conversación, de secretos y de urgencias cotidianas</string>
     <string name="real_cinema_subtitle">El primero de los grandes cines madrileños</string>
@@ -45,7 +45,7 @@
     <string name="cabina_telefonica_description2">En esta escena veremos el modelo M.M.M., fabricado en Villaverde (Madrid) por Manufacturas Metálicas Madrileñas.</string>
 
     <!--    Point of Interest Tutorial Texts-->
-    <string name="tobogan_tutorial">Para iniciar esta experiencia el usuario debe enfocar su teléfono móvil a la fachada principal del Palacio de Cibeles, justo encima de la entrada principal. Se romienda situarse como mínimo a unos 10 metros de distancia de la entrada para mejor detección. En caso de no conseguir reconocer el objetivo, acceder a la escena en Remoto.</string>
+    <string name="tobogan_tutorial">Para iniciar esta experiencia el usuario debe enfocar su teléfono móvil a la fachada principal del Palacio de Cibeles, justo encima de la entrada principal. Se recomienda situarse como mínimo a unos 10 metros de distancia de la entrada para mejor detección. En caso de no conseguir reconocer el objetivo, acceder a la escena en Remoto.</string>
     <string name="clara_campoamor_tutorial">Este punto de interés consta de 2 objetivos enfocables, la parte delantera del busto y la parte trasera del mismo. Debe situarse a unos 2 metros de cada objetivo y mantener el teléfono móvil apuntando al busto. Si no se detecta a la primera se recomienda mover ligeramente el móvil a los lados o echarse un poco para delante o hacia atrás para que la cámara registre más contenido. En caso de no conseguir reconocer el objetivo, acceder a la escena en Remoto.</string>
     <string name="cabina_telefonica_tutorial">Enfoca el dispositivo móvil al suelo y realiza pequeños movimientos horizontales para que el sensor sea capaz de detectar el plano. Se recomienda situarse en un espacio abierto para poder tener una vista completa del modelo. En caso de no conseguir reconocer el objetivo, acceder a la escena en Remoto.</string>
     <string name="real_cinema_tutorial">Sitúate en la rotonda justo delante de la entrada del hotel y enfoca el teléfono móvil en dirección al nombre del restaurante "Mar Mía". En caso de no conseguir reconocer el objetivo, acceder a la escena en Remoto.</string>
@@ -91,12 +91,24 @@
     <string name="puerta_sol_subtitle">Epicentro histórico y social de Madrid, desde sus inciertos inicios como "calle Ancha" hasta ser protagonista de las campanadas</string>
 
     <!--    Collectable Interest Tutorial Texts-->
-    <string name="collectable_map_tutorial">Para iniciar esta experiencia el usuario debe enfocar su teléfono móvil al plano del Palacio Real, situado en la Plaza de Oriente. Se recomienda situarse a unos 2 metros de distancia del plano para mejor detección.</string>
+    <string name="collectable_map_tutorial">Para iniciar esta experiencia el usuario debe enfocar su teléfono móvil al suelo o sobre una superficie como una mesa y realizar pequeños movimientos horizontales para que el sensor sea capaz de detectar el plano. Una vez aparezca un encuadre blanco se debe pulsar la pantalla para que el contenido aparezca.</string>
     <string name="collectable_postcard_tutorial">Para iniciar esta experiencia el usuario debe enfocar su teléfono móvil a la imagen de la postal, situada en la Plaza de Oriente. Se recomienda situarse a unos 2 metros de distancia de la imagen para mejor detección.</string>
     <string name="palacio_real_tutorial">Para iniciar esta experiencia el usuario debe enfocar su teléfono móvil a cualquiera de los 2 escudos que decoran la entrada a palacio en la Plaza de la Armería. Se recomienda situarse a unos 2 metros de distancia de la imagen para mejor detección.</string>
     <string name="plaza_mayor_tutorial">Para iniciar esta experiencia el usuario debe enfocar su teléfono móvil a la fachada principal de la Casa de la Panadería, situada en la Plaza Mayor. Se recomienda situarse a unos 2 metros de distancia de la imagen para mejor detección.</string>
     <string name="puerta_alcala_tutorial">Para iniciar esta experiencia el usuario debe enfocar su teléfono móvil a la fachada exterior de la Puerta. Se recomienda situarse entre las paradas de autobuses desde la entrada al Parque del Retiro</string>
     <string name="puerta_sol_tutorial">Para iniciar esta experiencia el usuario debe enfocar su teléfono móvil al reloj de la Puerta del Sol. Se recomienda situarse a unos 20 metros de distancia de la imagen para mejor detección.</string>
+
+    <string name="collectable_map_description_long">Plano de Madrid en perspectiva caballera. En el ángulo superior izquierdo se representa el escudo de Madrid. En la zona inferior tiene una leyenda con nombres de calles y edificios. En el ángulo inferior derecho cuenta con una cartela que en este ejemplar está vacía.</string>
+    <string name="collectable_map_description2">La cronología de 1635 concedida tradicionalmente a este plano, muy probablemente el más antiguo de Madrid, estaba basada en la ausencia del Palacio del Buen Retiro y de la Cerca que rodeaba la ciudad, construcciones ambas de los primeros momentos del reinado de Felipe IV, así como en otros detalles, como la representación de la iglesia de los Jesuitas (actual de San Isidro) en la calle de Toledo que se pensaba que reflejaba un momento posterior (Madrid. Cartografía madrileña, 1982: 56). Sin embargo investigaciones más recientes plantean que este plano fue delineado por Antonio Mancelli entre 1614 y 1622 y que su primera impresión se llevó a cabo en 1623.</string>
+
+
+    <!-- Collectable External Links-->
+    <string name="map_external_link">https://gatopormadrid.com/2017/04/26/1614-1622-plano-de-antonio-mancelli/</string>
+    <string name="postcard_external_link">https://www.memoriademadrid.es/view/364979</string>
+    <string name="palacio_real_external_link">https://www.memoriademadrid.es/view/421403</string>
+    <string name="plaza_mayor_external_link">https://www.memoriademadrid.es/view/352440</string>
+    <string name="puerta_alcala_external_link">https://www.memoriademadrid.es/view/352314</string>
+    <string name="puerta_sol_external_link">https://www.memoriademadrid.es/view/351068</string>
 
 
     <!--    FAB Text-->

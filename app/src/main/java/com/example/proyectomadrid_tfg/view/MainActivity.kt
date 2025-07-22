@@ -76,12 +76,14 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    // (Made by user) Function to set up the Floating Action Button (FAB) for going back
     private fun setupFabBack() {
         binding.fabBack.setOnClickListener {
             navController.navigateUp()
         }
     }
 
+    // (Made by user)
     private fun handleError(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_LONG).show()
         Log.e("MainActivity", message)

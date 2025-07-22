@@ -18,7 +18,7 @@ object PointOfInterestProvider {
                 detailImages = R.drawable.img_hem_nuevomundo_18950725,
                 assistTutorial = R.string.tobogan_tutorial,
                 assistTutorialImage = R.drawable.img_tuto_cibeles,
-                wikiUrl = R.string.tobogan_external_link
+                url = R.string.tobogan_external_link
             )
         ),
 
@@ -36,7 +36,7 @@ object PointOfInterestProvider {
                 detailImages = R.drawable.img_info_clara,
                 assistTutorial = R.string.clara_campoamor_tutorial,
                 assistTutorialImage = R.drawable.img_tuto_clara,
-                wikiUrl = R.string.clara_campoamor_external_link
+                url = R.string.clara_campoamor_external_link
             )
         ),
 
@@ -53,7 +53,7 @@ object PointOfInterestProvider {
                 detailImages = R.drawable.img_info_cinema,
                 assistTutorial = R.string.real_cinema_tutorial,
                 assistTutorialImage = R.drawable.img_tuto_hotel_teatro_front,
-                wikiUrl = R.string.real_cinema_external_link
+                url = R.string.real_cinema_external_link
             )
         ),
 
@@ -71,7 +71,7 @@ object PointOfInterestProvider {
                 detailImages = R.drawable.img_telephone_viana_park,
                 assistTutorial = R.string.cabina_telefonica_tutorial,
                 assistTutorialImage = R.drawable.img_tuto_cabina,
-                wikiUrl = R.string.cabina_telefonica_external_link
+                url = R.string.cabina_telefonica_external_link
             )
         ),
 

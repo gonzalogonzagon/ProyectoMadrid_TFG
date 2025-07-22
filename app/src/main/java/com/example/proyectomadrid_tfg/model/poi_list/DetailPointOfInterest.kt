@@ -4,13 +4,13 @@ import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 
 data class DetailPointOfInterest(
-    val arSceneId: Int? = null, // Identificador de escena AR
-    @StringRes val detailedDescription: Int? = null, // Descripción detallada para la vista en detalle
-    @StringRes val detailedDescription2: Int? = null, // Segunda parte de la descripción detallada
-    @DrawableRes val detailImages: Int? = null, // Imágenes adicionales para la vista detalle
+    val arSceneId: Int? = null,
+    @StringRes val detailedDescription: Int? = null,
+    @StringRes val detailedDescription2: Int? = null,
+    @DrawableRes val detailImages: Int? = null,
     @StringRes val assistTutorial: Int? = null,
     @DrawableRes val assistTutorialImage: Int? = null,
     @StringRes val ulrText: Int? = null,
-    val wikiUrl: Int? = null, // Enlace a Wikipedia
+    val url: Int? = null,
     val urlList: List<Int>? = null
 )

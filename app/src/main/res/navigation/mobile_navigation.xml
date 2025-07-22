@@ -9,7 +9,7 @@
         android:id="@+id/navigation_list"
         android:name="com.example.proyectomadrid_tfg.view.list.POIListFragment"
         android:label="@string/title_poi_list"
-        tools:layout="@layout/fragment_poi_list" >
+        tools:layout="@layout/fragment_poi_list">
 
         <action
             android:id="@+id/action_navigation_list_to_navigation_detail_poi"
@@ -20,21 +20,21 @@
         android:id="@+id/navigation_map"
         android:name="com.example.proyectomadrid_tfg.view.map.CityMapFragment"
         android:label="@string/title_city_map"
-        tools:layout="@layout/fragment_city_map" >
+        tools:layout="@layout/fragment_city_map">
         <action
             android:id="@+id/action_navigation_map_to_navigation_detail_poi"
             app:destination="@id/navigation_detail_poi" />
         <argument
             android:name="pointOfInterestId"
-            app:argType="integer"
-            android:defaultValue="0" />
+            android:defaultValue="0"
+            app:argType="integer" />
     </fragment>
 
     <fragment
         android:id="@+id/navigation_collection"
         android:name="com.example.proyectomadrid_tfg.view.collection.CollectablesFragment"
         android:label="@string/title_collection"
-        tools:layout="@layout/fragment_collectables" >
+        tools:layout="@layout/fragment_collectables">
         <action
             android:id="@+id/action_navigation_collection_to_navigation_detail_poi"
             app:destination="@id/navigation_detail_poi" />
@@ -47,14 +47,14 @@
         android:id="@+id/navigation_detail_poi"
         android:name="com.example.proyectomadrid_tfg.view.list.DetailPOIListFragment"
         android:label="fragment_detail_poi_list"
-        tools:layout="@layout/fragment_detail_poi_list" >
+        tools:layout="@layout/fragment_detail_poi_list">
         <argument
             android:name="pointOfInterestId"
-            app:argType="integer"/>
+            app:argType="integer" />
         <argument
             android:name="fromMap"
-            app:argType="boolean"
-            android:defaultValue="false" />
+            android:defaultValue="false"
+            app:argType="boolean" />
         <action
             android:id="@+id/action_navigation_detail_poi_to_navigation_map"
             app:destination="@id/navigation_map"
@@ -62,19 +62,19 @@
             app:popUpToInclusive="false" />
         <argument
             android:name="fromCollection"
-            app:argType="boolean"
-            android:defaultValue="false" />
+            android:defaultValue="false"
+            app:argType="boolean" />
         <argument
             android:name="fromPostcard"
-            app:argType="boolean"
-            android:defaultValue="false" />
+            android:defaultValue="false"
+            app:argType="boolean" />
 
     </fragment>
     <fragment
         android:id="@+id/navigation_collection_list"
         android:name="com.example.proyectomadrid_tfg.view.collection.CollectablesListFragment"
         android:label="fragment_collectables_list"
-        tools:layout="@layout/fragment_collectables_list" >
+        tools:layout="@layout/fragment_collectables_list">
         <action
             android:id="@+id/action_navigation_collection_list_to_navigation_detail_poi"
             app:destination="@id/navigation_detail_poi" />

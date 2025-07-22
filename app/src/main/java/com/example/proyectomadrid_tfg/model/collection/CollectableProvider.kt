@@ -19,12 +19,12 @@ object CollectableProvider {
                 longitude = -3.7000,
                 detailPointOfInterest = DetailPointOfInterest(
                     arSceneId = R.string.tobogan_scene,
-                    detailedDescription = R.string.tobogan_description,
-                    detailedDescription2 = R.string.tobogan_description,
-                    detailImages = R.drawable.img_hem_nuevomundo_18950725,
-                    assistTutorial = R.string.lore_ipsum,
-                    assistTutorialImage = R.drawable.img_tuto_cibeles,
-                    wikiUrl = R.string.tobogan_external_link
+                    detailedDescription = R.string.collectable_map_description_long,
+                    detailedDescription2 = R.string.collectable_map_description2,
+                    detailImages = R.drawable.img_mancelli,
+                    assistTutorial = R.string.collectable_map_tutorial,
+                    assistTutorialImage = R.drawable.img_tuto_cabina,
+                    url = R.string.map_external_link
                 )
             ),
         ),
@@ -44,7 +44,7 @@ object CollectableProvider {
                         arSceneId = R.string.tobogan_scene,
                         assistTutorial = R.string.puerta_sol_tutorial,
                         assistTutorialImage = R.drawable.img_tuto_sol,
-                        wikiUrl = R.string.tobogan_external_link
+                        url = R.string.puerta_sol_external_link
                     )
                 ),
                 PointOfInterest(
@@ -58,7 +58,7 @@ object CollectableProvider {
                         arSceneId = R.string.tobogan_scene,
                         assistTutorial = R.string.palacio_real_tutorial,
                         assistTutorialImage = R.drawable.img_tuto_palacio_real,
-                        wikiUrl = R.string.tobogan_external_link
+                        url = R.string.palacio_real_external_link
                     )
                 ),
                 PointOfInterest(
@@ -72,7 +72,7 @@ object CollectableProvider {
                         arSceneId = R.string.tobogan_scene,
                         assistTutorial = R.string.plaza_mayor_tutorial,
                         assistTutorialImage = R.drawable.img_tuto_plaza,
-                        wikiUrl = R.string.tobogan_external_link
+                        url = R.string.plaza_mayor_external_link
                     )
                 ),
                 PointOfInterest(
@@ -86,7 +86,7 @@ object CollectableProvider {
                         arSceneId = R.string.tobogan_scene,
                         assistTutorial = R.string.puerta_alcala_tutorial,
                         assistTutorialImage = R.drawable.img_tuto_alcala,
-                        wikiUrl = R.string.tobogan_external_link
+                        url = R.string.puerta_alcala_external_link
                     )
                 ),
 
