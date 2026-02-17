@@ -37,7 +37,6 @@ class POIListFragment : Fragment() {
         adapterPoiList = PointOfInterestAdapter(
             PointOfInterestProvider.pointOfInterestList
         ) { pointOfInterest ->
-            // Navegar al fragmento de detalle
             val action =
                 POIListFragmentDirections.actionNavigationListToNavigationDetailPoi(pointOfInterest.title)
             findNavController().navigate(action)

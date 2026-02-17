@@ -3,75 +3,74 @@
     <string name="title_poi_list">Listado</string>
     <string name="title_city_map">Mapa</string>
     <string name="title_collection">Colecciones</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
-    <!--    POINT OF INTEREST AR SCENES-->
+    <!-- POINT OF INTEREST AR SCENES -->
     <string name="tobogan_scene">ToboganScene</string>
     <string name="clara_campoamor_scene">ClaraScene</string>
     <string name="cabina_telefonica_scene">CabinaScene</string>
     <string name="real_cinema_scene">RealCinemaScene</string>
-    <!--    POINT OF INTEREST REMOTE SCENES-->
+    <!-- POINT OF INTEREST REMOTE SCENES -->
     <string name="r_tobogan_scene">RToboganScene</string>
     <string name="r_clara_campoamor_scene">RClaraScene</string>
     <string name="r_cabina_telefonica_scene">RCabinaScene</string>
     <string name="r_real_cinema_scene">RCinemaScene</string>
 
-    <!--    ################################################################-->
+    <!-- ################################################################ -->
 
-    <!--    Point of Interest Title Texts-->
+    <!-- Point of Interest Title Texts -->
     <string name="tobogan_title">El tobogán de Cibeles</string>
     <string name="clara_campoamor_title">Monumento a Clara Campoamor</string>
     <string name="cabina_telefonica_title">Cabinas telefónicas españolas</string>
     <string name="real_cinema_title">Real Cinema</string>
 
-    <!--    Point of Interest Subtitle Texts-->
+    <!-- Point of Interest Subtitle Texts -->
     <string name="tobogan_description">Los Jardines del Buen Retiro, escenario de ocio y espectáculos populares en el Madrid de finales del siglo XIX</string>
     <string name="clara_campoamor_subtitle">La mujer que logró el sufragio femenino en España</string>
     <string name="cabina_telefonica_subtitle">Auténticos refugios de conversación, de secretos y de urgencias cotidianas</string>
     <string name="real_cinema_subtitle">El primero de los grandes cines madrileños</string>
 
 
-    <!--    Point of Interest Description Texts-->
+    <!-- Point of Interest Description Texts -->
     <string name="tobogan_description_long">El “Toboggan”, escrito con dos ges, fue una de las atracciones destinadas al disfrute público allá por los inicios del siglo XX. Se trataba de un tobogán de madera que se encontraba en la Plaza de Cibeles, en Madrid. Aunque el tobogán ya no existe, su recuerdo perdura como un símbolo de la diversión y el entretenimiento de aquella época.</string>
     <string name="clara_campoamor_description_long">Ubicado en la plaza de Guardias de Corps, junto al centro cultural Conde Duque, se alza el busto de bronce que recuerda a esta abogada, política y defensora incansable de los derechos de las mujeres. </string>
     <string name="cabina_telefonica_description_long">La primera "cabina" pública en Madrid se instaló en 1928, en el Parque del Retiro, como un sencillo puesto de teléfono de previo pago. Pero no fue hasta finales de 1962 cuando comenzaron a desplegarse por las calles las cabinas tal como hoy las recordamos: de aluminio, vidrio y dotadas de guías telefónicas.</string>
     <string name="real_cinema_description_long">A lo largo de su historia, el Real Cinema fue testigo de grandes estrenos, como Metrópolis, y de los vaivenes políticos del país: sufrió daños durante la Guerra Civil y fue completamente reconstruido en los años 60. Finalmente, cerró sus puertas en 2012 y fue demolido en 2020, dejando paso a un nuevo edificio.</string>
 
-    <!--   Point of Interest Description2 Texts-->
+    <!-- Point of Interest Description2 Texts -->
     <string name="tobogan_description2">En este espacio, junto a paseos, estanques y glorietas, se organizaban ferias, conciertos, veladas festivas y diversas atracciones que acercaban la modernidad y el entretenimiento a los madrileños.</string>
     <string name="clara_campoamor_description2">Esta obra fue realizada por el escultor Lucas Alcalde. Tras ser robada en 2016, el Ayuntamiento encargó su reproducción al mismo artista, devolviéndola a este espacio en 2017, como símbolo de memoria y justicia.</string>
     <string name="cabina_telefonica_description2">En esta escena veremos el modelo M.M.M., fabricado en Villaverde (Madrid) por Manufacturas Metálicas Madrileñas.</string>
 
-    <!--    Point of Interest Tutorial Texts-->
+    <!-- Point of Interest Tutorial Texts -->
     <string name="tobogan_tutorial">Para iniciar esta experiencia el usuario debe enfocar su teléfono móvil a la fachada principal del Palacio de Cibeles, justo encima de la entrada principal. Se recomienda situarse como mínimo a unos 10 metros de distancia de la entrada para mejor detección. En caso de no conseguir reconocer el objetivo, acceder a la escena en Remoto.</string>
     <string name="clara_campoamor_tutorial">Este punto de interés consta de 2 objetivos enfocables, la parte delantera del busto y la parte trasera del mismo. Debe situarse a unos 2 metros de cada objetivo y mantener el teléfono móvil apuntando al busto. Si no se detecta a la primera se recomienda mover ligeramente el móvil a los lados o echarse un poco para delante o hacia atrás para que la cámara registre más contenido. En caso de no conseguir reconocer el objetivo, acceder a la escena en Remoto.</string>
     <string name="cabina_telefonica_tutorial">Enfoca el dispositivo móvil al suelo y realiza pequeños movimientos horizontales para que el sensor sea capaz de detectar el plano. Se recomienda situarse en un espacio abierto para poder tener una vista completa del modelo. En caso de no conseguir reconocer el objetivo, acceder a la escena en Remoto.</string>
     <string name="real_cinema_tutorial">Sitúate en la rotonda justo delante de la entrada del hotel y enfoca el teléfono móvil en dirección al nombre del restaurante "Mar Mía". En caso de no conseguir reconocer el objetivo, acceder a la escena en Remoto.</string>
 
 
-
-    <!--    Point of Interest External Links-->
+    <!-- Point of Interest External Links -->
     <string name="tobogan_external_link">https://www.memoriademadrid.es/view/440519</string>
     <string name="clara_campoamor_external_link">https://claragomez.es/2022/04/30/texto-integro-del-discurso-de-clara-campoamor-en-las-cortes/</string>
     <string name="cabina_telefonica_external_link">https://historiatelefonia.com/2024/04/26/60-anos-de-cabinas-telefonicas-espanolas/</string>
     <string name="real_cinema_external_link">https://gatopormadrid.com/2017/11/09/madrid-desaparecido-real-cinema/</string>
 
 
-    <!--    Point of Interest List DetailView Texts-->
+    <!-- Point of Interest List DetailView Texts -->
     <string name="tvTitleDescription">Información</string>
     <string name="tvTitleTutorial">Cómo iniciar la experiencia</string>
     <string name="tvLinks">Enlaces de interés</string>
     <string name="poi_list_no_data_subtitle">No se han encontrado puntos de interés en esta categoría</string>
     <string name="poi_list_no_data_subtitle2">Puedes cambiar</string>
 
-    <!--    Point of Interest Picture Texts-->
+    <!-- Point of Interest Picture Texts -->
     <string name="image_of_point_of_interest">Imagen del punto de interés</string>
 
-    <!--    ################################################################-->
+    <!-- ################################################################ -->
 
-    <!--    Collectable Title Texts-->
+    <!-- Collectable Title Texts -->
     <string name="collectable_map_title">Planos y mapas</string>
     <string name="collectable_postcard_title">Postales</string>
 
@@ -81,7 +80,7 @@
     <string name="puerta_sol_title">Puerta del Sol</string>
 
 
-    <!--    Collectable Subtitle Texts-->
+    <!-- Collectable Subtitle Texts -->
     <string name="collectable_map_subtitle">Descubre mapas históricos de la villa de Madrid</string>
     <string name="collectable_postcard_subtitle">Instantáneas de los lugares más emblemáticos de Madrid</string>
 
@@ -90,7 +89,7 @@
     <string name="puerta_alcala_subtitle">Una de las cinco puertas reales, o registro, que daban acceso a la ciudad</string>
     <string name="puerta_sol_subtitle">Epicentro histórico y social de Madrid, desde sus inciertos inicios como "calle Ancha" hasta ser protagonista de las campanadas</string>
 
-    <!--    Collectable Interest Tutorial Texts-->
+    <!-- Collectable Interest Tutorial Texts -->
     <string name="collectable_map_tutorial">Para iniciar esta experiencia el usuario debe enfocar su teléfono móvil al suelo o sobre una superficie como una mesa y realizar pequeños movimientos horizontales para que el sensor sea capaz de detectar el plano. Una vez aparezca un encuadre blanco se debe pulsar la pantalla para que el contenido aparezca.</string>
     <string name="collectable_postcard_tutorial">Para iniciar esta experiencia el usuario debe enfocar su teléfono móvil a la imagen de la postal, situada en la Plaza de Oriente. Se recomienda situarse a unos 2 metros de distancia de la imagen para mejor detección.</string>
     <string name="palacio_real_tutorial">Para iniciar esta experiencia el usuario debe enfocar su teléfono móvil a cualquiera de los 2 escudos que decoran la entrada a palacio en la Plaza de la Armería. Se recomienda situarse a unos 2 metros de distancia de la imagen para mejor detección.</string>
@@ -102,7 +101,7 @@
     <string name="collectable_map_description2">La cronología de 1635 concedida tradicionalmente a este plano, muy probablemente el más antiguo de Madrid, estaba basada en la ausencia del Palacio del Buen Retiro y de la Cerca que rodeaba la ciudad, construcciones ambas de los primeros momentos del reinado de Felipe IV, así como en otros detalles, como la representación de la iglesia de los Jesuitas (actual de San Isidro) en la calle de Toledo que se pensaba que reflejaba un momento posterior (Madrid. Cartografía madrileña, 1982: 56). Sin embargo investigaciones más recientes plantean que este plano fue delineado por Antonio Mancelli entre 1614 y 1622 y que su primera impresión se llevó a cabo en 1623.</string>
 
 
-    <!-- Collectable External Links-->
+    <!-- Collectable External Links -->
     <string name="map_external_link">https://gatopormadrid.com/2017/04/26/1614-1622-plano-de-antonio-mancelli/</string>
     <string name="postcard_external_link">https://www.memoriademadrid.es/view/364979</string>
     <string name="palacio_real_external_link">https://www.memoriademadrid.es/view/421403</string>
@@ -110,13 +109,16 @@
     <string name="puerta_alcala_external_link">https://www.memoriademadrid.es/view/352314</string>
     <string name="puerta_sol_external_link">https://www.memoriademadrid.es/view/351068</string>
 
+    <!-- ################################################################ -->
 
-    <!--    FAB Text-->
+    <!-- FAB Text -->
     <string name="back_to_previous_screen">Volver a la pantalla anterior</string>
+    <string name="help_guide">Abrir guía rápida</string>
+    <string name="help_dialog_message">Prueba de dialogo modal</string>
     <string name="fab_go_to_map">Localizar Punto de Interés</string>
 
 
-    <!--    Detail Fragment Texts-->
+    <!-- Detail Fragment Texts -->
     <string name="lore_ipsum">Lore ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"

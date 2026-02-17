@@ -49,7 +49,6 @@ class CollectablesListFragment : Fragment() {
         adapterCollectablesList = CollectablesListAdapter(
             collectable.poiList ?: emptyList()
         ) { poi ->
-            // Navegar al detalle del POI
             val action = CollectablesListFragmentDirections
                 .actionNavigationCollectionListToNavigationDetailPoi(poi.title, fromPostcard = true, fromCollection = true)
             findNavController().navigate(action)

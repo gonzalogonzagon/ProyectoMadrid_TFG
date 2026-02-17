@@ -39,26 +39,29 @@
         android:layout_marginTop="24dp"
         android:contentDescription="@string/back_to_previous_screen"
         android:visibility="gone"
-        app:fabSize="mini"
         app:backgroundTint="@color/black"
+        app:fabSize="mini"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_fab_back_24dp"
         app:tint="@color/white"
         tools:visibility="visible" />
 
-<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-<!--        android:id="@+id/fabMapMarker"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_margin="16dp"-->
-<!--        android:contentDescription="@string/fab_go_to_map"-->
-<!--        android:visibility="gone"-->
-<!--        app:backgroundTint="@color/black"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintBottom_toTopOf="@id/nav_view"-->
-<!--        app:srcCompat="@drawable/ic_location_pin_24dp"-->
-<!--        app:tint="@color/white"-->
-<!--        tools:visibility="visible" />-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/help_guide"
+        android:visibility="visible"
+        app:backgroundTint="@color/black"
+        app:fabSize="mini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_settings_24dp"
+        app:tint="@color/white"
+        tools:visibility="visible" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
