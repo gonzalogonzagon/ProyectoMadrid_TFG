@@ -10,6 +10,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.example.proyectomadrid_tfg.R
 import com.example.proyectomadrid_tfg.databinding.FragmentDetailPoiListBinding
 import com.example.proyectomadrid_tfg.model.collection.CollectableProvider
 import com.example.proyectomadrid_tfg.model.poi_list.PointOfInterest
@@ -129,7 +130,7 @@ class DetailPOIListFragment : Fragment() {
             }
 
             if (pointOfInterest.detailPointOfInterest?.url != null) {
-                binding.tvTextLinks.text = "Consulta más información pulsando aquí"
+                binding.tvTextLinks.text = getString(R.string.external_link_text)
                 binding.tvTextLinks.setOnClickListener {
                     val intent = Intent(Intent.ACTION_VIEW, Uri.parse(pointOfInterest.detailPointOfInterest.url.let { getString(it) }))
                     startActivity(intent)
@@ -166,8 +167,8 @@ class DetailPOIListFragment : Fragment() {
 
             // Mostrar mensaje de error
             // Aquí deberías tener una vista para mostrar errores
-            tvError.text = message
-            tvError.visibility = View.VISIBLE
+//            tvError.text = message
+//            tvError.visibility = View.VISIBLE
         }
     }
 }

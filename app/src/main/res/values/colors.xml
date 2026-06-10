@@ -8,8 +8,15 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="gray">#FF888888</color>
+    <color name="dark_gray">#FF444444</color>
+    <color name="light_gray">#FFCCCCCC</color>
 
-    <color name="bottom_nav_menu">#1B1B1B</color>
+    <color name="link">#0E5FFF</color>
+
+    <color name="error">#B00020</color>
+    <color name="on_pressed">#EBEB91</color>
+
 
     <!--    Point of Interest Colors-->
     <color name="poi_color_person">#FF5722</color>
@@ -17,14 +24,12 @@
     <color name="poi_color_activity">#343A75</color>
     <color name="poi_color_technology">#414957</color>
 
-    <!--    Point of Interest Colors-->
+    <!--    Collectables Colors-->
     <color name="collectable_postcard">#000000</color>
+
+    <!--    Bottom Navigation Colors-->
+    <color name="bottom_nav_menu">#1B1B1B</color>
+
+    <!--    Button Action Color-->
     <color name="button_action">#4D6B82</color>
-
-    <color name="gray">#FF888888</color>
-    <color name="dark_gray">#FF444444</color>
-    <color name="light_gray">#FFCCCCCC</color>
-
-    <color name="error">#B00020</color>
-    <color name="on_pressed">#EBEB91</color>
 </resources>

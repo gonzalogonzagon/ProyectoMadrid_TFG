@@ -15,7 +15,7 @@ object PointOfInterestProvider {
                 arSceneId = R.string.tobogan_scene,
                 detailedDescription = R.string.tobogan_description_long,
                 detailedDescription2 = R.string.tobogan_description2,
-                detailImages = R.drawable.img_hem_nuevomundo_18950725,
+                detailImages = R.drawable.img_nuevo_mundo_tobogan_scene,
                 assistTutorial = R.string.tobogan_tutorial,
                 assistTutorialImage = R.drawable.img_tuto_cibeles,
                 url = R.string.tobogan_external_link
@@ -35,7 +35,7 @@ object PointOfInterestProvider {
                 detailedDescription2 = R.string.clara_campoamor_description2,
                 detailImages = R.drawable.img_info_clara,
                 assistTutorial = R.string.clara_campoamor_tutorial,
-                assistTutorialImage = R.drawable.img_tuto_clara,
+                assistTutorialImage = R.drawable.img_tuto_clara_ground_pos,
                 url = R.string.clara_campoamor_external_link
             )
         ),
@@ -70,7 +70,7 @@ object PointOfInterestProvider {
                 detailedDescription2 = R.string.cabina_telefonica_description2,
                 detailImages = R.drawable.img_telephone_viana_park,
                 assistTutorial = R.string.cabina_telefonica_tutorial,
-                assistTutorialImage = R.drawable.img_tuto_cabina,
+                assistTutorialImage = R.drawable.img_tuto_content_positioning,
                 url = R.string.cabina_telefonica_external_link
             )
         ),

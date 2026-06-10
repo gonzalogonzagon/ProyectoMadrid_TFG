@@ -33,6 +33,7 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabBack"
+        style="@style/Widget.App.Button.FAB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -40,7 +41,6 @@
         android:contentDescription="@string/back_to_previous_screen"
         android:visibility="gone"
         app:backgroundTint="@color/black"
-        style="@style/Widget.App.Button.FAB"
         app:fabSize="mini"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -50,6 +50,7 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabHelp"
+        style="@style/Widget.App.Button.FAB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -58,13 +59,11 @@
         android:visibility="visible"
         app:backgroundTint="@color/black"
         app:fabSize="mini"
-        style="@style/Widget.App.Button.FAB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_question_dialog_24dp"
         app:tint="@color/white"
-        tools:visibility="visible">
-    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+        tools:visibility="visible" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

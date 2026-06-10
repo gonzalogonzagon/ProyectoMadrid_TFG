@@ -23,7 +23,7 @@ object CollectableProvider {
                     detailedDescription2 = R.string.collectable_map_description2,
                     detailImages = R.drawable.img_mapa_villa_madrid2,
                     assistTutorial = R.string.collectable_map_tutorial,
-                    assistTutorialImage = R.drawable.img_tuto_cabina,
+                    assistTutorialImage = R.drawable.img_tuto_map_pos,
                     url = R.string.map_external_link
                 )
             ),

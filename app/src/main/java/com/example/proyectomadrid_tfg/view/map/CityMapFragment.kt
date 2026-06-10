@@ -93,7 +93,7 @@ class CityMapFragment : Fragment() {
         map.zoomController.setVisibility(CustomZoomButtonsController.Visibility.NEVER)
 
         // Set minimum and maximum zoom levels
-        map.minZoomLevel = 13.0
+        map.minZoomLevel = 15.0
         map.maxZoomLevel = 20.5
 
         // Set initial zoom level and center point
@@ -103,10 +103,10 @@ class CityMapFragment : Fragment() {
 
         // Define the bounding box for the Comunidad de Madrid
         val boundingBox = BoundingBox(
-            40.5,
-            -3.6,
-            40.3,
-            -3.8
+            40.45,
+            -3.65,
+            40.38,
+            -3.75
         )
         // Set the scrollable area limit
         map.setScrollableAreaLimitDouble(boundingBox)

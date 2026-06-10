@@ -36,10 +36,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:gravity="center"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/jost_regular"
+            android:gravity="center"
             android:textColor="@color/black"
             android:textSize="32sp"
             android:textStyle="bold"
@@ -52,17 +52,31 @@
             android:id="@+id/tvPoiDetailSubtitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/jost_regular"
+            android:gravity="center"
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvPoiDetailTitle"
             tools:text="La Plaza Mayor de Madrid es una plaza rectangular de estilo barroco, ubicada en el centro de Madrid." />
+
+        <ImageButton
+            android:contentDescription="@string/postcard_obtained"
+            android:id="@+id/btnHint"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_hint_check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fabShowOnMap" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnARExperience"
@@ -72,7 +86,7 @@
             android:layout_marginTop="24dp"
             android:fontFamily="@font/jost_semibold"
             android:paddingVertical="12dp"
-            android:text="Experiencia en Realidad Aumentada"
+            android:text="@string/btn_open_in_ar"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -86,7 +100,7 @@
             android:layout_marginTop="24dp"
             android:fontFamily="@font/jost_semibold"
             android:paddingVertical="12dp"
-            android:text="Experiencia en remoto"
+            android:text="@string/btn_open_in_remote"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -121,7 +135,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/fabShowOnMap" />
+            app:layout_constraintTop_toBottomOf="@id/btnHint" />
 
         <TextView
             android:id="@+id/tvPoiDescription2"
@@ -146,6 +160,7 @@
             android:layout_height="256dp"
             android:layout_marginHorizontal="32dp"
             android:layout_marginTop="24dp"
+            android:contentDescription="@string/tvTitleDescription"
             android:scaleType="centerCrop"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -205,6 +220,7 @@
             android:layout_height="256dp"
             android:layout_marginHorizontal="32dp"
             android:layout_marginTop="24dp"
+            android:contentDescription="@string/tvTitleTutorial"
             android:scaleType="centerCrop"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -235,25 +251,13 @@
             android:layout_marginHorizontal="32dp"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/jost_regular"
-            android:textColor="@color/black"
+            android:textColor="@color/link"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvLinks"
             tools:text="@string/lore_ipsum" />
 
-
-        <TextView
-            android:id="@+id/tvError"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="32dp"
-            android:fontFamily="@font/jost_regular"
-            android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

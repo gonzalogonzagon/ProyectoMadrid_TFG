@@ -28,7 +28,7 @@
 
         <item name="android:textColor">@color/black</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="android:fontFamily">@font/jost_semibold</item>
         <item name="strokeColor">@color/black</item>
 
         <item name="cornerRadius">0dp</item>

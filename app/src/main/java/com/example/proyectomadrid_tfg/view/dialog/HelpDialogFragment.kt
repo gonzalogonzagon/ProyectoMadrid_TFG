@@ -32,6 +32,10 @@ class HelpDialogFragment : DialogFragment() {
             update()
         }
 
+        binding.btnClose.setOnClickListener {
+            dismiss()
+        }
+
         update()
 
         return AlertDialog.Builder(requireContext())
