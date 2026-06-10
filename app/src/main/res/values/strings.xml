@@ -78,6 +78,7 @@
     <string name="plaza_mayor_title">Plaza Mayor</string>
     <string name="puerta_alcala_title">Puerta de Alcalá</string>
     <string name="puerta_sol_title">Puerta del Sol</string>
+    <string name="estacion_atocha_title">Estación Puerta de Atocha</string>
 
 
     <!-- Collectable Subtitle Texts -->
@@ -88,6 +89,7 @@
     <string name="plaza_mayor_subtitle">Lugar de encuentro, anuncios y celebraciones de carácter civil, religioso y militar</string>
     <string name="puerta_alcala_subtitle">Una de las cinco puertas reales, o registro, que daban acceso a la ciudad</string>
     <string name="puerta_sol_subtitle">Epicentro histórico y social de Madrid, desde sus inciertos inicios como "calle Ancha" hasta ser protagonista de las campanadas</string>
+    <string name="estacion_atocha_subtitle">La estación de tren más grande de Madrid, con un jardín tropical en su interior</string>
 
     <!-- Collectable Interest Tutorial Texts -->
     <string name="collectable_map_tutorial">Para iniciar esta experiencia el usuario debe enfocar su teléfono móvil al suelo o sobre una superficie como una mesa y realizar pequeños movimientos horizontales para que el sensor sea capaz de detectar el plano. Una vez aparezca un encuadre blanco se debe pulsar la pantalla para que el contenido aparezca.</string>

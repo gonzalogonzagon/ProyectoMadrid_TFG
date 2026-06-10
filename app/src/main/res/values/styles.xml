@@ -13,11 +13,11 @@
         <item name="backgroundTint">@color/white</item>
         <item name="strokeColor">@color/black</item>
         <item name="strokeWidth">8dp</item>
-        <item name="rippleColor">@color/gray</item>
+        <item name="rippleColor">@color/button_action</item>
         <item name="iconTint">@color/black</item>
         <item name="elevation">3dp</item>
-        <item name="hoveredFocusedTranslationZ">3dp</item>
-        <item name="pressedTranslationZ">6dp</item>
+        <item name="hoveredFocusedTranslationZ">4dp</item>
+        <item name="pressedTranslationZ">12dp</item>
     </style>
 
 
@@ -31,7 +31,7 @@
         <item name="android:fontFamily">@font/open_sans_semibold</item>
         <item name="strokeColor">@color/black</item>
 
-        <item name="cornerRadius">8dp</item>
+        <item name="cornerRadius">0dp</item>
         <item name="strokeWidth">4dp</item>
 
         <!-- Configuración de padding y tipografía -->
@@ -44,6 +44,44 @@
 
 
         <!-- Añadir ripple effect para mejor feedback -->
-<!--        <item name="rippleColor">@android:color/darker_gray</item>-->
+        <!--        <item name="rippleColor">@android:color/darker_gray</item>-->
+    </style>
+
+    <style name="Widget.App.Button.3DSlim" parent="Widget.MaterialComponents.Button">
+        <!-- Fondo y borde -->
+        <item name="backgroundTint">@color/white</item>
+        <item name="strokeColor">@color/black</item>
+        <item name="strokeWidth">6dp</item>
+
+        <!-- Esquinas redondeadas (efecto 3D) -->
+        <item name="cornerRadius">0dp</item>
+
+        <!-- Tipografía -->
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/jost_semibold</item>
+
+        <!-- Padding interno -->
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+
+        <!-- Elevación (efecto 3D con sombra) -->
+        <item name="elevation">8dp</item>
+        <item name="hoveredFocusedTranslationZ">4dp</item>
+        <item name="pressedTranslationZ">12dp</item>
+
+        <!-- Ripple effect -->
+        <item name="rippleColor">@color/button_action</item>
+
+        <!-- Espaciado de letra -->
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="Widget.App.Button.FAB" parent="Widget.MaterialComponents.Button">
+        <item name="hoveredFocusedTranslationZ">4dp</item>
+        <item name="pressedTranslationZ">12dp</item>
+        <item name="rippleColor">@color/button_action</item>
     </style>
 </resources>

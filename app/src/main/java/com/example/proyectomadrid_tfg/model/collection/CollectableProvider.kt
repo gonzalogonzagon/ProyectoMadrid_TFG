@@ -21,7 +21,7 @@ object CollectableProvider {
                     arSceneId = R.string.tobogan_scene,
                     detailedDescription = R.string.collectable_map_description_long,
                     detailedDescription2 = R.string.collectable_map_description2,
-                    detailImages = R.drawable.img_mancelli,
+                    detailImages = R.drawable.img_mapa_villa_madrid2,
                     assistTutorial = R.string.collectable_map_tutorial,
                     assistTutorialImage = R.drawable.img_tuto_cabina,
                     url = R.string.map_external_link
@@ -50,7 +50,7 @@ object CollectableProvider {
                 PointOfInterest(
                     title = R.string.palacio_real_title,
                     subtitle = R.string.palacio_real_subtitle,
-                    image = R.drawable.img_palacio,
+                    image = R.drawable.img_palacio_real,
                     category = R.color.collectable_postcard,
                     latitude = 40.416557,
                     longitude = -3.714431,
@@ -78,7 +78,7 @@ object CollectableProvider {
                 PointOfInterest(
                     title = R.string.puerta_alcala_title,
                     subtitle = R.string.puerta_alcala_subtitle,
-                    image = R.drawable.img_alcala,
+                    image = R.drawable.img_puerta_alcala,
                     category = R.color.collectable_postcard,
                     latitude = 40.419727,
                     longitude = -3.688097,
@@ -86,6 +86,20 @@ object CollectableProvider {
                         arSceneId = R.string.tobogan_scene,
                         assistTutorial = R.string.puerta_alcala_tutorial,
                         assistTutorialImage = R.drawable.img_tuto_alcala,
+                        url = R.string.puerta_alcala_external_link
+                    )
+                ),
+                PointOfInterest(
+                    title = R.string.estacion_atocha_title,
+                    subtitle = R.string.estacion_atocha_subtitle,
+                    image = R.drawable.img_atocha,
+                    category = R.color.collectable_postcard,
+                    latitude = 40.408282,
+                    longitude = -3.691929,
+                    detailPointOfInterest = DetailPointOfInterest(
+                        arSceneId = R.string.tobogan_scene,
+                        assistTutorial = R.string.puerta_alcala_tutorial,
+                        assistTutorialImage = R.drawable.img_tuto_atocha,
                         url = R.string.puerta_alcala_external_link
                     )
                 ),

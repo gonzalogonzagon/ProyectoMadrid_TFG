@@ -5,7 +5,7 @@
     android:layout_width="360dp"
     android:layout_height="wrap_content"
     android:background="@color/white"
-    app:cardCornerRadius="16dp"
+    app:cardElevation="16dp"
     tools:context=".view.map.CustomInfoWindow">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,17 +16,16 @@
             android:id="@+id/btnClosePopup"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:contentDescription="TODO"
-            android:src="@drawable/ic_close_button_24dp"
             android:layout_marginTop="2dp"
             android:layout_marginEnd="8dp"
             android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="TODO"
+            android:src="@drawable/ic_close_button_24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/categoryIndicator" />
 
         <ImageView
             android:id="@+id/ivPoiImage"
-            tools:background="@color/light_gray"
             android:layout_width="360dp"
             android:layout_height="180dp"
             android:contentDescription="@string/image_of_point_of_interest"
@@ -34,6 +33,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            tools:background="@color/light_gray"
             tools:src="@drawable/ic_launcher_foreground" />
 
         <View
@@ -52,9 +52,9 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
+            android:fontFamily="@font/jost_regular"
             android:textColor="@color/black"
-            android:fontFamily="@font/open_sans_bold"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@id/btnClosePopup"
             app:layout_constraintStart_toStartOf="parent"
@@ -64,15 +64,15 @@
         <TextView
             android:id="@+id/tvPoiDescription"
             android:layout_width="0dp"
-            android:fontFamily="@font/open_sans_regular"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="12dp"
             android:layout_marginBottom="24dp"
-            android:textColor="@color/dark_gray"
-            android:maxLines="4"
             android:ellipsize="end"
+            android:fontFamily="@font/jost_regular"
+            android:maxLines="4"
+            android:textColor="@color/dark_gray"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

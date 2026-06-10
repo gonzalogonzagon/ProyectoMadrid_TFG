@@ -19,7 +19,7 @@ object HelpTipProvider {
         HelpTip(
             title = R.string.cabina_telefonica_title,
             message = R.string.tobogan_description,
-            imageRes = R.drawable.img_cabina_telefonica
+            imageRes = R.drawable.img_tuto_cabina
         ),
 
         HelpTip(

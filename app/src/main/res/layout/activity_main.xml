@@ -40,10 +40,11 @@
         android:contentDescription="@string/back_to_previous_screen"
         android:visibility="gone"
         app:backgroundTint="@color/black"
+        style="@style/Widget.App.Button.FAB"
         app:fabSize="mini"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_fab_back_24dp"
+        app:srcCompat="@drawable/ic_arrow_back_24dp"
         app:tint="@color/white"
         tools:visibility="visible" />
 
@@ -57,11 +58,13 @@
         android:visibility="visible"
         app:backgroundTint="@color/black"
         app:fabSize="mini"
+        style="@style/Widget.App.Button.FAB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_settings_24dp"
+        app:srcCompat="@drawable/ic_question_dialog_24dp"
         app:tint="@color/white"
-        tools:visibility="visible" />
+        tools:visibility="visible">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

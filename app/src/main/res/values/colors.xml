@@ -19,6 +19,7 @@
 
     <!--    Point of Interest Colors-->
     <color name="collectable_postcard">#000000</color>
+    <color name="button_action">#4D6B82</color>
 
     <color name="gray">#FF888888</color>
     <color name="dark_gray">#FF444444</color>
