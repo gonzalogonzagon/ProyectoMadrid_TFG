@@ -19,8 +19,7 @@ object CollectableProvider {
                 longitude = -3.7000,
                 detailPointOfInterest = DetailPointOfInterest(
                     arSceneId = R.string.tobogan_scene,
-                    detailedDescription = R.string.collectable_map_description_long,
-                    detailedDescription2 = R.string.collectable_map_description2,
+                    detailedDescription = R.string.collectable_map_description,
                     detailImages = R.drawable.img_mapa_villa_madrid2,
                     assistTutorial = R.string.collectable_map_tutorial,
                     assistTutorialImage = R.drawable.img_tuto_map_pos,

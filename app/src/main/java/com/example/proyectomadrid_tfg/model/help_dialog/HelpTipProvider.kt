@@ -5,27 +5,33 @@ import com.example.proyectomadrid_tfg.R
 object HelpTipProvider {
     val helpTipLists: List<HelpTip> = listOf(
         HelpTip(
-            title = R.string.tobogan_title,
-            message = R.string.tobogan_description,
-            imageRes = R.drawable.img_tuto_alcala
+            title = R.string.tuto_title1,
+            message = R.string.tuto_desc1,
+            imageRes = R.drawable.img_tuto_madrid_recuerdo_aumentado
         ),
 
         HelpTip(
-            title = R.string.clara_campoamor_title,
-            message = R.string.clara_campoamor_description2,
-            imageRes = R.drawable.img_tuto_palacio_real
+            title = R.string.tuto_title2,
+            message = R.string.tuto_desc2,
+            imageRes = R.drawable.img_tuto_poi
         ),
 
         HelpTip(
-            title = R.string.cabina_telefonica_title,
-            message = R.string.tobogan_description,
-            imageRes = R.drawable.img_tuto_atocha
+            title = R.string.tuto_title3,
+            message = R.string.tuto_desc3,
+            imageRes = R.drawable.img_tuto_ar_content
         ),
 
         HelpTip(
-            title = R.string.real_cinema_title,
-            message = R.string.tobogan_description,
-            imageRes = R.drawable.img_sol
+            title = R.string.tuto_title4,
+            message = R.string.tuto_desc4,
+            imageRes = R.drawable.img_tuto_postcards
+        ),
+
+        HelpTip(
+            title = R.string.tuto_title5,
+            message = R.string.tuto_desc5,
+            imageRes = R.drawable.img_tuto_map
         )
     )
 }

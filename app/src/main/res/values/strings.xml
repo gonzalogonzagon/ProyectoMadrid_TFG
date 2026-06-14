@@ -44,14 +44,14 @@
     <string name="real_cinema_description_long">A lo largo de su historia, el Real Cinema fue testigo de grandes estrenos, como Metrópolis, y de los vaivenes políticos del país: sufrió daños durante la Guerra Civil y fue completamente reconstruido en los años 60. Finalmente, cerró sus puertas en 2012 y fue demolido en 2020, dejando paso a un nuevo edificio.</string>
 
     <!-- Point of Interest Description2 Texts -->
-    <string name="tobogan_description2">En este espacio, junto a paseos, estanques y glorietas, se organizaban ferias, conciertos, veladas festivas y diversas atracciones que acercaban la modernidad y el entretenimiento a los madrileños.</string>
+    <string name="tobogan_description2">En este espacio, junto a paseos, estanques y glorietas, se organizaban ferias, conciertos, veladas festivas y diversas atracciones que acercaban nuevas formas de entretenimiento a los madrileños.</string>
     <string name="clara_campoamor_description2">Esta obra fue realizada por el escultor Lucas Alcalde. Tras ser robada en 2016, el Ayuntamiento encargó su reproducción al mismo artista, devolviéndola a este espacio en 2017, como símbolo de memoria y justicia.</string>
     <string name="cabina_telefonica_description2">En esta escena veremos el modelo M.M.M., fabricado en Villaverde (Madrid) por Manufacturas Metálicas Madrileñas.</string>
 
     <!-- Point of Interest Tutorial Texts -->
     <string name="tobogan_tutorial">Para iniciar esta experiencia el usuario debe enfocar su dispositvo a la fachada principal del Palacio de Cibeles, justo encima de la entrada principal. Se recomienda situarse como mínimo a unos 15-20 metros de distancia de la entrada para mejor detección. En caso de no conseguir reconocer el objetivo, acceder a la escena en Remoto.</string>
-    <string name="clara_campoamor_tutorial">Para iniciar esta experiencia, el usuario debe situarse en el lado derecho del busto a Clara Campoamor. El dispositivo debe enfocarse al suelo y realizar pequeños movimientos horizontales para que el sensor sea capaz de detectar un plano. Una vez aparezca un recuadro blanco, el usuario debe ubircarlo en el espacio donde se encuentra la base del busto y seguidamente tocar la pantalla. En caso de no conseguir reconocer el objetivo, acceder a la escena en Remoto.</string>
-    <string name="cabina_telefonica_tutorial">Para iniciar esta experiencia, el dispositivo debe enfocarse al suelo y realizar pequeños movimientos horizontales para que el sensor sea capaz de detectar un plano. Se recomienda situarse en un espacio abierto para poder tener una vista completa del modelo. En caso de no conseguir reconocer el objetivo, acceder a la escena en Remoto.</string>
+    <string name="clara_campoamor_tutorial">Para iniciar esta experiencia, el usuario debe situarse en el lado derecho del busto a Clara Campoamor. El dispositivo debe enfocarse al suelo y realizar pequeños movimientos en forma de "8" o "L" para que el sensor sea capaz de detectar un plano. Una vez aparezca un recuadro blanco, debe ubicarse en el espacio donde se encuentra la base del busto y seguidamente tocar la pantalla. En caso de no conseguir reconocer el objetivo, acceder a la escena en Remoto.</string>
+    <string name="cabina_telefonica_tutorial">Para iniciar esta experiencia, el dispositivo debe enfocarse al suelo y realizar pequeños movimientos en forma de "8" o "L" para que el sensor sea capaz de detectar un plano. Se recomienda situarse en un espacio abierto para poder tener una vista completa del modelo. En caso de no conseguir reconocer el objetivo, acceder a la escena en Remoto.</string>
     <string name="real_cinema_tutorial">Para iniciar esta experiencia, el usuario debe situarse en la rotonda justo delante de la entrada del hotel y enfocar el dispositivo móvil en dirección al nombre del restaurante "Mar Mía". En caso de no conseguir reconocer el objetivo, acceder a la escena en Remoto.</string>
 
 
@@ -96,15 +96,14 @@
     <string name="estacion_atocha_subtitle">La estación de tren más grande de Madrid, con un jardín tropical en su interior</string>
 
     <!-- Collectable Interest Tutorial Texts -->
-    <string name="collectable_map_tutorial">Para iniciar esta experiencia el usuario debe enfocar su teléfono móvil al suelo o sobre una superficie como una mesa y realizar pequeños movimientos horizontales para que el sensor sea capaz de detectar el plano. Una vez aparezca un encuadre blanco se debe pulsar la pantalla para que el contenido aparezca.</string>
+    <string name="collectable_map_tutorial">Para iniciar esta experiencia el usuario debe enfocar su teléfono móvil al suelo o sobre una superficie como una mesa y realizar pequeños movimientos en forma de "8" o "L" para que el sensor sea capaz de detectar el plano. Una vez aparezca un encuadre blanco se debe pulsar la pantalla para que el contenido aparezca.</string>
     <string name="collectable_postcard_tutorial">Para iniciar esta experiencia el usuario debe enfocar su teléfono móvil a la imagen de la postal, situada en la Plaza de Oriente. Se recomienda situarse a unos 2 metros de distancia de la imagen para mejor detección.</string>
     <string name="palacio_real_tutorial">Para iniciar esta experiencia el usuario debe enfocar su teléfono móvil a cualquiera de los 2 escudos que decoran la entrada a palacio en la Plaza de la Armería. Se recomienda situarse a unos 2 metros de distancia de la imagen para mejor detección.</string>
     <string name="plaza_mayor_tutorial">Para iniciar esta experiencia el usuario debe enfocar su teléfono móvil a la fachada principal de la Casa de la Panadería, situada en la Plaza Mayor. Se recomienda situarse a unos 2 metros de distancia de la imagen para mejor detección.</string>
     <string name="puerta_alcala_tutorial">Para iniciar esta experiencia el usuario debe enfocar su teléfono móvil a la fachada exterior de la Puerta. Se recomienda situarse entre las paradas de autobuses desde la entrada al Parque del Retiro</string>
     <string name="puerta_sol_tutorial">Para iniciar esta experiencia el usuario debe enfocar su teléfono móvil al reloj de la Puerta del Sol. Se recomienda situarse a unos 20 metros de distancia de la imagen para mejor detección.</string>
 
-    <string name="collectable_map_description_long">Plano de Madrid en perspectiva caballera. En el ángulo superior izquierdo se representa el escudo de Madrid. En la zona inferior tiene una leyenda con nombres de calles y edificios. En el ángulo inferior derecho cuenta con una cartela que en este ejemplar está vacía.</string>
-    <string name="collectable_map_description2">La cronología de 1635 concedida tradicionalmente a este plano, muy probablemente el más antiguo de Madrid, estaba basada en la ausencia del Palacio del Buen Retiro y de la Cerca que rodeaba la ciudad, construcciones ambas de los primeros momentos del reinado de Felipe IV, así como en otros detalles, como la representación de la iglesia de los Jesuitas (actual de San Isidro) en la calle de Toledo que se pensaba que reflejaba un momento posterior (Madrid. Cartografía madrileña, 1982: 56). Sin embargo investigaciones más recientes plantean que este plano fue delineado por Antonio Mancelli entre 1614 y 1622 y que su primera impresión se llevó a cabo en 1623.</string>
+    <string name="collectable_map_description">La cronología de 1635 concedida tradicionalmente a este plano, muy probablemente el más antiguo de Madrid, estaba basada en la ausencia del Palacio del Buen Retiro y de la Cerca que rodeaba la ciudad, construcciones ambas de los primeros momentos del reinado de Felipe IV, así como en otros detalles, como la representación de la iglesia de los Jesuitas (actual de San Isidro) en la calle de Toledo que se pensaba que reflejaba un momento posterior (Madrid. Cartografía madrileña, 1982: 56). Sin embargo investigaciones más recientes plantean que este plano fue delineado por Antonio Mancelli entre 1614 y 1622 y que su primera impresión se llevó a cabo en 1623.</string>
 
 
     <!-- Collectable External Links -->
@@ -114,6 +113,25 @@
     <string name="plaza_mayor_external_link">https://www.memoriademadrid.es/view/352440</string>
     <string name="puerta_alcala_external_link">https://www.memoriademadrid.es/view/352314</string>
     <string name="puerta_sol_external_link">https://www.memoriademadrid.es/view/351068</string>
+
+    <!-- ################################################################ -->
+
+    <string name="tuto_title1">Bienvenido/a a Madrid Recuerdo Aumentado</string>
+    <string name="tuto_title2">Secciones principales de la aplicación</string>
+    <string name="tuto_title3">Puntos de interés destacados</string>
+    <string name="tuto_title4">Extras y coleccionables</string>
+    <string name="tuto_title5">Mapas históricos de Madrid</string>
+    <string name="tuto_desc1">Explora la ciudad desde una nueva perspectiva gracias a la realidad aumentada
+        y a los archivos históricos que preservan su memoria.</string>
+    <string name="tuto_desc2">La app se organiza en tres áreas: listado, mapa y coleccionables.
+        Para activar una experiencia selecciona un punto del mapa para iniciarla o bien, en el listado, busca lugares por temática</string>
+    <string name="tuto_desc3">Para iniciar una escena destacada en RA selecciona desde el mapa o el listado.
+        Desde la vista en detalle pulsa el botón para acceder a la experiencia RA o bien inicia la escena en remoto de forma alternativa.</string>
+    <string name="tuto_desc4">Es posible conseguir postales de aquellos lugares más emblemáticos de la ciudad.
+        Para ello busca los marcadores con icono de postal en el mapa o bien, accede a Postales en la sección Coleccionables.</string>
+    <string name="tuto_desc5">Cuando reúnas postales, podrás verlas desde un mapa histórico de la ciudad.
+        Accede al elemento Mapas desde la sección Coleccionables para explorar cómo han cambiado estos lugares a lo largo del tiempo.</string>
+
 
     <!-- ################################################################ -->
 
